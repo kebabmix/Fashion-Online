@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
 
     <!--- META DATA START --->
     <meta charset="utf-8">
-    <title>Website title| <?= $PageName ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--- META DATA END --->
-
+    <title>Website title | <?= $PageName ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#FFFFFF">
     <!--- CSS/STYLE --->
     <link rel="stylesheet" href="content/css/style.css">
 
     <!--- FONTS --->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
     <!--- CDN --->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-  </head>
+<body>
 
-  <!--- BODY START --->
-  <body>
+<!--- HEADER SECTION START --->
+<header>
 
-    <!--- HEADER SECTION START --->
-    <header>
-
-    </header>
-    <!--- HEADER SECTION END --->
+</header>
+<!--- HEADER SECTION END --->
