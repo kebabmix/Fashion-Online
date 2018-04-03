@@ -1,0 +1,15 @@
+/* Footer CSS */
+.fStyle {
+ background-color: #2d2d2d;
+ color: #a0a0a0;
+ padding-top: 30px;
+ padding-bottom: 55px;
+}
+
+.fStyle span {
+  color: #ffffff;
+}
+
+.fStyle a {
+  color: #a0a0a0;
+}
