@@ -1,11 +1,15 @@
-    <footer class="container fStyle">
-      <a href="index.php">Home</a> |
-      <a href="mens.php">Mens</a> |
-      <a href="Women.php">Women</a> |
-      <a href="collections.php">Collections</a> |
-      <a href="contact.php">Contact</a>
-      <br />
-      <p>Copyright © 2014. All Rights Reserved by <span>Fashion Online.</span></p>
+    <footer class="container fColor">
+      <section class="fStyle">
+        <a href="index.php">Home</a> |
+        <a href="mens.php">Mens</a> |
+        <a href="Women.php">Women</a> |
+        <a href="collections.php">Collections</a> |
+        <a href="contact.php">Contact</a>
+        <br />
+        <p>Copyright © 2014. All Rights Reserved by <span>Fashion Online.</span></p>
+        <img src="content/img/logo/Fashion_online_-_200x60INVERTED.png" alt="Logo" class="fLogo" />
+      </section>
+
     </footer>
 
 

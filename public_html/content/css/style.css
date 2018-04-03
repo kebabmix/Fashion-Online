@@ -1,9 +1,14 @@
 /* Footer CSS */
+.fColor{
+  background-color: #2d2d2d;
+}
+
 .fStyle {
- background-color: #2d2d2d;
  color: #a0a0a0;
  padding-top: 30px;
  padding-bottom: 55px;
+ margin-left: 25px;
+ margin-right: 25px;
 }
 
 .fStyle span {
@@ -12,4 +17,9 @@
 
 .fStyle a {
   color: #a0a0a0;
+}
+
+.fLogo {
+  float: right;
+  margin-top: -55px;
 }
