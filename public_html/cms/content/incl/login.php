@@ -4,7 +4,7 @@ $strCss = isset($strCss) && !empty($strCss) ? $strCss : "bootstrap.min,cms-style
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CMS LOGIN</title>
+    <title>Fashion Online - Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="/cms/content/css/css.php?f=<?php echo $strCss ?>" rel="stylesheet" type="text/css"/>
 </head>

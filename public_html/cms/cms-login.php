@@ -8,7 +8,7 @@ switch(strtoupper($mode)) {
     case "LIST":
         include DOCROOT . "/cms/content/incl/header.php";
 
-        
+
 
         include DOCROOT . "/cms/content/incl/footer.php";
         break;
