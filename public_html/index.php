@@ -6,7 +6,7 @@ require_once 'incl/header.php'; ?>
 <section class="row">
         <div class="topnews">
             <img src="content/img/banner1.png" class="col-md-8 imgPadFix"/>
-            <img src="content/img/banner2.png" class="col-md-4 imgFix"/>
+            <img src="content/img/banner2.png" class="col-md-4"/>
         </div>
         <div class="col-md-8">hej</div>
         <aside class="col-md-4 sidearea">
