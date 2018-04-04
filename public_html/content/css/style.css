@@ -47,6 +47,7 @@ header div.container div.header_top div.header_top_right {
 
   @media screen and (min-width: 769px) {
     header div.container div.header_top div.header_top_left {
+      margin-left: 3px;
       padding: 0px 0 0 0;
     }
   }
@@ -114,6 +115,7 @@ header div.container div.header_top div.header_top_right form div.form-group {
 
 @media screen and (min-width: 769px) {
   header div.container div.header_top div.header_top_right form div.form-group {
+    margin-bottom: 0;
     display: inline-block;
     width: 175px;
   }
@@ -147,15 +149,26 @@ header div.container div.header_top div.header_top_right form button.btn-primary
 
 @media screen and (min-width: 769px) {
   header div.container div.header_top div.header_top_right form button.btn-primary {
+    padding: 3px;
     width: 50px;
   }
 }
 /*------ HEADER TOP END ------*/
 
 header div.container div.header_logo {
-  margin: 12px 0;
+  margin: 12px auto;
+  text-align: center;
+  width: 100%;
 }
 
+@media screen and (min-width: 769px) {
+  header div.container div.header_logo {
+    text-align: left;
+    margin: 12px 6px;
+  }
+}
+
+/*------ HEADER BOTTOM START ------*/
 header div.container div.header_bottom {
   margin: 0;
   padding: 0;
@@ -163,12 +176,23 @@ header div.container div.header_bottom {
   overflow: hidden;
 }
 
-header div.container div.header_bottom div.header_bottom_left {
-  float: left;
+header div.container div.header_bottom div.header_bottom_left,
+header div.container div.header_bottom div.header_bottom_right {
+  margin: 0;
+  padding: 0 12px;
+  float: none;
 }
 
-header div.container div.header_bottom div.header_bottom_right {
-  float: right;
+@media screen and (min-width: 769px) {
+  header div.container div.header_bottom div.header_bottom_left {
+    padding: 0 3px;
+    float: left;
+  }
+
+  header div.container div.header_bottom div.header_bottom_right {
+    padding: 0 6px;
+    float: right;
+  }
 }
 
 header div.container div.header_bottom div.header_bottom_left nav,
@@ -177,9 +201,15 @@ header div.container div.header_bottom div.header_bottom_left nav ul {
   padding: 0;
 }
 
+@media screen and (min-width: 769px) {
+  header div.container div.header_bottom div.header_bottom_left nav {
+    margin: 6px 0 0 0;
+  }
+}
+
 header div.container div.header_bottom div.header_bottom_left nav ul li {
   margin: 0;
-  padding: 6px 12px;
+  padding: 0;
   display: block;
 }
 
@@ -191,13 +221,30 @@ header div.container div.header_bottom div.header_bottom_left nav ul li {
 }
 
 header div.container div.header_bottom div.header_bottom_left nav ul li a {
+  padding: 6px 12px;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
+header div.container div.header_bottom div.header_bottom_right form div.form-group {
+  margin-bottom: 0;
+}
+
 header div.container div.header_bottom div.header_bottom_right form div.form-group input[type="text"] {
-  margin: 3px 0 0 0;
+  margin: 2px 0 12px 0;
   padding: 3px 12px;
   color: #999999;
+  width: 100%;
   border-radius: 25px;
 }
+
+@media screen and (min-width: 769px) {
+  header div.container div.header_bottom div.header_bottom_right form div.form-group input[type="text"] {
+    margin: 6px 0;
+    padding: 3px 12px;
+    color: #999999;
+    width: 175px;
+    border-radius: 25px;
+  }
+}
+/*------ HEADER BOTTOM END ------*/

@@ -79,7 +79,7 @@
 
         <div class="header_bottom_right">
           <form class="" action="index.html" method="post">
-            <div class="form-group mb-2">
+            <div class="form-group">
               <input type="text" class="form-control" id="userID" placeholder="Search">
             </div>
           </form>
