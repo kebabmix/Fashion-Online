@@ -14,7 +14,7 @@ require_once 'incl/header.php'; ?>
             <img src="content/img/campaign.jpg" alt="" class="col-12">
             <img src="content/img/campaign-2.jpg" alt="" class="col-12">
             <form class="newsletter" method="post">
-                <h3>Sign up to our newletter</h3>
+                <h4>Sign up to our newletter</h4>
                 <hr>
                 <label for="inputEmail" class="col-3">E-Mail</label>
                 <input type="email" name="email" id="inputEmail" class="">
