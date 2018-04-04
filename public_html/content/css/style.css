@@ -1,6 +1,9 @@
+/* Overall styles */
+
 body {
     background-color: #f6f6f4;
 }
+
 .topnews {
     padding-bottom: 1rem;
 }
@@ -11,15 +14,15 @@ body {
     font-family: 'bebasregular';
     src: url('../font/bebas/bebas___-webfont.eot');
     src: url('../font/bebas/bebas___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/bebas/bebas___-webfont.woff') format('woff'),
-         url('../font/bebas/bebas___-webfont.ttf') format('truetype'),
-         url('../font/bebas/bebas___-webfont.svg#bebasregular') format('svg');
+    url('../font/bebas/bebas___-webfont.woff') format('woff'),
+    url('../font/bebas/bebas___-webfont.ttf') format('truetype'),
+    url('../font/bebas/bebas___-webfont.svg#bebasregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-h1,h2,h3,h4 {
-  font-family: bebasregular;
+h1, h2, h3, h4 {
+    font-family: bebasregular;
 }
 
 /* Sidearea */
@@ -38,7 +41,7 @@ h1,h2,h3,h4 {
 }
 
 .newsletter input {
-    background-color: rgb(221,221,221);
+    background-color: rgb(221, 221, 221);
     border: none;
     width: 73%;
     padding: 5px 15px;
@@ -60,41 +63,39 @@ h1,h2,h3,h4 {
 
 /* Footer CSS */
 .fColor {
-  background-color: #2d2d2d;
+    background-color: #2d2d2d;
 }
 
 .fStyle {
- color: #a0a0a0;
- padding-top: 30px;
- padding-bottom: 55px;
- margin-left: 25px;
- margin-right: 25px;
+    color: #a0a0a0;
+    padding-top: 30px;
+    padding-bottom: 55px;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 1rem;
 }
 
 .fStyle span a {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .fStyle a {
-  color: #a0a0a0;
+    color: #a0a0a0;
 }
 
 .fLogo {
-    margin-left: auto!important;
-    margin-right: auto!important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     display: block;
     margin-top: 50px;
 }
+
+/* Desktop styles */
 
 @media only screen and (min-width: 960px) {
     /* Top Banner CSS */
     .imgPadFix {
         padding: 0px;
-    }
-
-    .imgFix {
-        padding-right: 0;
     }
 
     .fLogo {
@@ -105,12 +106,7 @@ h1,h2,h3,h4 {
     .sidearea {
         float: right;
         display: grid;
-        padding: 0;
         padding-left: 1rem;
-    }
-
-    .sidearea img {
-        padding-right: 0;
     }
 
     .topnews {

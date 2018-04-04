@@ -1,4 +1,4 @@
-    <footer class="container fColor">
+    <footer class="fColor">
       <section class="fStyle">
         <a href="index.php">Home</a> |
         <a href="mens.php">Mens</a> |
