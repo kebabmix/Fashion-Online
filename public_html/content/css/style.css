@@ -47,7 +47,7 @@ header div.container div.header_top div.header_top_right {
 
   @media screen and (min-width: 769px) {
     header div.container div.header_top div.header_top_left {
-      padding: 3px 0 0 0;
+      padding: 0px 0 0 0;
     }
   }
 
@@ -57,20 +57,21 @@ header div.container div.header_top div.header_top_right {
 }
 
 header div.container div.header_topdiv.header_top_left nav ul {
-  margin: 0;
   padding: 0;
   text-align: center;
 }
 
 @media screen and (min-width: 769px) {
   header div.container div.header_top div.header_top_left nav ul {
+    margin: 0;
+    padding: 0;
     text-align: left;
   }
 }
 
 header div.container div.header_top div.header_top_left nav ul li {
-  margin: 0 12px 0 0;
-  padding: 3px;
+  margin: 0;
+  padding: 6px;
   display: inline-block;
 }
 
@@ -85,13 +86,6 @@ header div.container div.header_top div.header_top_left nav ul li a:focus,
 header div.container div.header_top div.header_top_left nav ul li a:hover {
   color: #FFFFFF;
   text-decoration: none;
-}
-
-header div.container div.header_top div.header_top_right .form-control-plaintext {
-  margin: 0;
-  padding: 0 12px 0 0;
-  text-align: right;
-  color: #999999;
 }
 
 header div.container div.header_top div.sign_in {
@@ -153,7 +147,7 @@ header div.container div.header_top div.header_top_right form button.btn-primary
 
 @media screen and (min-width: 769px) {
   header div.container div.header_top div.header_top_right form button.btn-primary {
-    width: 75px;
+    width: 50px;
   }
 }
 /*------ HEADER TOP END ------*/
@@ -166,21 +160,44 @@ header div.container div.header_bottom {
   margin: 0;
   padding: 0;
   background-color: #c3c3c3;
+  overflow: hidden;
 }
 
-header div.container div.header_bottom nav ul li {
+header div.container div.header_bottom div.header_bottom_left {
+  float: left;
+}
+
+header div.container div.header_bottom div.header_bottom_right {
+  float: right;
+}
+
+header div.container div.header_bottom div.header_bottom_left nav,
+header div.container div.header_bottom div.header_bottom_left nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+header div.container div.header_bottom div.header_bottom_left nav ul li {
   margin: 0;
   padding: 6px 12px;
   display: block;
 }
 
 @media screen and (min-width: 769px) {
-  header div.container div.header_bottom nav ul li {
+  header div.container div.header_bottom div.header_bottom_left nav ul li {
+    padding: 6px;
     display: inline-block;
   }
 }
 
-header div.container div.header_bottom nav ul li a {
+header div.container div.header_bottom div.header_bottom_left nav ul li a {
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+header div.container div.header_bottom div.header_bottom_right form div.form-group input[type="text"] {
+  margin: 3px 0 0 0;
+  padding: 3px 12px;
+  color: #999999;
+  border-radius: 25px;
 }

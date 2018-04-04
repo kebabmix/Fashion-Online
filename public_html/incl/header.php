@@ -66,14 +66,24 @@
 
     <div class="container">
       <div class="header_bottom">
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Collections</a></li>
-          </ul>
-        </nav>
+        <div class="header_bottom_left">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Collections</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header_bottom_right">
+          <form class="" action="index.html" method="post">
+            <div class="form-group mb-2">
+              <input type="text" class="form-control" id="userID" placeholder="Search">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
