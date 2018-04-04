@@ -3,8 +3,7 @@
 require_once 'incl/header.php'; ?>
 <!--- HEADER INCLUDES END --->
 
-<section class="container">
-    <div class="row">
+<section class="row">
         <div class="topnews">
             <img src="content/img/banner1.png" class="col-md-8 imgPadFix"/>
             <img src="content/img/banner2.png" class="col-md-4 imgFix"/>
@@ -24,7 +23,6 @@ require_once 'incl/header.php'; ?>
                 <button class="btn ml-auto" type="submit">Signup</button>
             </form>
         </aside>
-    </div>
 </section>
 
 <!--- HEADER INCLUDES START --->
