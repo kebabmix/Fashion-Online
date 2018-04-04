@@ -2,7 +2,7 @@
       <section class="fStyle">
         <a href="index.php">Home</a> |
         <a href="mens.php">Mens</a> |
-        <a href="Women.php">Women</a> |
+        <a href="women.php">Women</a> |
         <a href="collections.php">Collections</a> |
         <a href="contact.php">Contact</a>
         <br />
