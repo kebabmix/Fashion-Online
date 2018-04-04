@@ -6,10 +6,9 @@
         <a href="collections.php">Collections</a> |
         <a href="contact.php">Contact</a>
         <br />
-        <p>Copyright © 2014. All Rights Reserved by <span>Fashion Online.</span></p>
+        <p>Copyright © 2014. All Rights Reserved by <span><a href="index.php">Fashion Online.</a></span></p>
         <img src="content/img/logo/Fashion_online_-_200x60INVERTED.png" alt="Logo" class="fLogo" />
       </section>
-
     </footer>
 
 
