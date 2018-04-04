@@ -1,3 +1,40 @@
+body {
+    background-color: #f6f6f4;
+}
+.topnews {
+    padding-bottom: 1rem;
+}
+
+/* Sidearea */
+
+.sidearea img {
+    padding: 0 0 1rem;
+}
+
+.newsletter {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.newsletter input {
+    background-color: rgb(221,221,221);
+    border: none;
+    width: 73%;
+}
+
+.newsletter .btn {
+    display: block;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 5px 25px;
+    margin-top: 2rem;
+}
+
+.newsletter label {
+    padding-left: 0;
+    color: #b6b6b6;
+}
 
 /* Footer CSS */
 .fColor {
@@ -40,5 +77,20 @@
     .fLogo {
         float: right;
         margin-top: -55px;
+    }
+
+    .sidearea {
+        float: right;
+        display: grid;
+        padding: 0;
+        padding-left: 1rem;
+    }
+
+    .sidearea img {
+        padding-right: 0;
+    }
+
+    .topnews {
+        display: flex;
     }
 }
