@@ -1,44 +1,186 @@
+/*------------------------------------------------------------------
+Project:        Project name here
+Version:        1.0
+Last update:    31/12/2017
+Author:         Joachim Lind Hadberg
+URL:            https://facebook.com/joachimlindhadberg
+COMMENT:        This framework is using meyerweb reset css v2.0
 
-/* Footer CSS */
-.fColor {
-  background-color: #2d2d2d;
+00. Header
+01. General
+02. Typography
+03. Container
+04. Grid
+05. Block spacing
+06. Buttons
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------
+    00. HEADER START
+---------------------------------------------------*/
+
+/*------ HEADER TOP START ------*/
+header div.container div.header_top {
+  margin: 0;
+  padding: 6px 0 0 0;
+  background-color: #2D2D2D;
+  overflow: hidden;
 }
 
-.fStyle {
- color: #a0a0a0;
- padding-top: 30px;
- padding-bottom: 55px;
- margin-left: 25px;
- margin-right: 25px;
+
+header div.container div.header_top div.header_top_left,
+header div.container div.header_top div.header_top_right {
+  float: none;
+  display: block;
 }
 
-.fStyle span a {
-  color: #ffffff;
-}
+@media screen and (min-width: 769px) {
+  header div.container div.header_top div.header_top_left,
+  header div.container div.header_top div.header_top_right {
+    display: inline-block;
+  }
 
-.fStyle a {
-  color: #a0a0a0;
-}
+  header div.container div.header_top div.header_top_left {
+    float: left;
+  }
 
-.fLogo {
-    margin-left: auto!important;
-    margin-right: auto!important;
-    display: block;
-    margin-top: 50px;
-}
-
-@media only screen and (min-width: 960px) {
-    /* Top Banner CSS */
-    .imgPadFix {
-        padding: 0px;
+  @media screen and (min-width: 769px) {
+    header div.container div.header_top div.header_top_left {
+      padding: 3px 0 0 0;
     }
+  }
 
-    .imgFix {
-        padding-right: 0;
-    }
+  header div.container div.header_top div.header_top_right {
+    float: right;
+  }
+}
 
-    .fLogo {
-        float: right;
-        margin-top: -55px;
-    }
+header div.container div.header_topdiv.header_top_left nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  header div.container div.header_top div.header_top_left nav ul {
+    text-align: left;
+  }
+}
+
+header div.container div.header_top div.header_top_left nav ul li {
+  margin: 0 12px 0 0;
+  padding: 3px;
+  display: inline-block;
+}
+
+header div.container div.header_top div.header_top_left nav ul li a {
+  margin: 0;
+  padding: 0;
+  color: #999999;
+  transition: color 0.15s ease-in-out;
+}
+
+header div.container div.header_top div.header_top_left nav ul li a:focus,
+header div.container div.header_top div.header_top_left nav ul li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header div.container div.header_top div.header_top_right .form-control-plaintext {
+  margin: 0;
+  padding: 0 12px 0 0;
+  text-align: right;
+  color: #999999;
+}
+
+header div.container div.header_top div.sign_in {
+  margin: 0;
+  padding: 3px 6px;
+  text-align: center;
+  color: #999999;
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  header div.container div.header_top div.sign_in {
+    display: none;
+  }
+}
+
+header div.container div.header_top div.header_top_right form {
+  margin: 0;
+  padding: 0 12px;
+}
+
+header div.container div.header_top div.header_top_right form div.form-group {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  header div.container div.header_top div.header_top_right form div.form-group {
+    display: inline-block;
+    width: 175px;
+  }
+}
+
+header div.container div.header_top div.header_top_right form div.form-group input[type="text"],
+header div.container div.header_top div.header_top_right form div.form-group input[type="password"] {
+  margin: 0;
+  padding: 3px 12px;
+  width: 100%;
+  color: #999999;
+  background-color: #4a4a4a;
+  border: #4a4a4a;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 769px) {
+  header div.container div.header_top div.header_top_right form div.form-group input[type="text"],
+  header div.container div.header_top div.header_top_right form div.form-group input[type="password"] {
+    width: 175px;
+  }
+}
+
+header div.container div.header_top div.header_top_right form button.btn-primary {
+  margin: auto;
+  width: 125px;
+  background-color: #ea6a53;
+  border: #ea6a53;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 769px) {
+  header div.container div.header_top div.header_top_right form button.btn-primary {
+    width: 75px;
+  }
+}
+/*------ HEADER TOP END ------*/
+
+header div.container div.header_logo {
+  margin: 12px 0;
+}
+
+header div.container div.header_bottom {
+  margin: 0;
+  padding: 0;
+  background-color: #c3c3c3;
+}
+
+header div.container div.header_bottom nav ul li {
+  margin: 0;
+  padding: 6px 12px;
+  display: block;
+}
+
+@media screen and (min-width: 769px) {
+  header div.container div.header_bottom nav ul li {
+    display: inline-block;
+  }
+}
+
+header div.container div.header_bottom nav ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
 }

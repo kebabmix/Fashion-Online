@@ -26,5 +26,56 @@
   <!--- HEADER SECTION START --->
   <header>
 
+    <div class="container">
+      <div class="header_top">
+
+        <div class="header_top_left">
+          <nav>
+            <ul>
+              <li><a href="#">Find Retailer</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="sign_in">
+          Sign in
+        </div>
+
+        <div class="header_top_right">
+          <form class="form-inline" action="index.html" method="post">
+            <div class="form-group mb-2">
+              <input type="text" class="form-control" id="userID" placeholder="Username">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <input type="password" class="form-control" id="passwordID" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Go</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="header_logo">
+        <a href="#"><img src="content/img/logo/Fashion_online_-_200x60.png" alt="Fashion-online-200x60" width="225px"></a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="header_bottom">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Collections</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
   </header>
   <!--- HEADER SECTION END --->
