@@ -1,3 +1,12 @@
+/* Top Banner CSS */
+.imgPadFix {
+  padding: 0px;
+}
+
+.imgFix {
+  padding-left: 15px;
+}
+
 /* Footer CSS */
 .fColor{
   background-color: #2d2d2d;
