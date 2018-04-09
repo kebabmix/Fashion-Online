@@ -20,8 +20,8 @@ $strCss = isset($strCss) && !empty($strCss) ? $strCss : "bootstrap.min,cms-style
     <nav>
         <div class="brand">CMS</div>
         <ul>
-            <li><a href="">Noget</a></li>
-            <li><a href="">Noget</a></li>
+            <li><a href="index.php">Forside</a></li>
+            <li><a href="product.php">Produkter</a></li>
             <li><a href="">Noget</a></li>
             <li><a href="">Noget</a></li>
             <li><a href="">Noget</a></li>
