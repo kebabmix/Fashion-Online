@@ -67,6 +67,12 @@ p {
     color: #b6b6b6;
 }
 
+/* Lastest arrivals */
+
+#lastest-arrivals .col-md-8 {
+    padding: 0;
+}
+
 /* Footer CSS */
 .fColor {
     background-color: #2d2d2d;
