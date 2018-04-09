@@ -28,6 +28,7 @@ require_once 'incl/header.php'; ?>
 <!--- OWL SLIDER SECTION START --->
 <section class="row carousel">
     <h1>other products</h1>
+    <p>Check our all lastest product in this section</p>
     <div class="col-md-11">
         <div class="owl-carousel">
             <div><img src="http://via.placeholder.com/300x200" alt=""></div>
