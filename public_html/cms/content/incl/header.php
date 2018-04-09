@@ -1,6 +1,6 @@
 <?php
 global $auth, $strModuleName, $strModuleMode;
-$strCss = isset($strCss) && !empty($strCss) ? $strCss : "bootstrap.min,cms-style,summernote";
+$strCss = isset($strCss) && !empty($strCss) ? $strCss : "bootstrap.min,cms-style";
 ?>
 <!DOCTYPE html>
 <html>
