@@ -8,7 +8,10 @@ require_once 'incl/header.php'; ?>
             <img src="content/img/banner1.png" class="col-md-8 imgPadFix"/>
             <img src="content/img/banner2.png" class="col-md-4"/>
         </div>
-        <div class="col-md-8">hej</div>
+        <div class="col-md-8">
+            <h1>lastest arrivals</h1>
+            <small></small>
+        </div>
         <aside class="col-md-4 sidearea">
             <img src="content/img/campaign.jpg" alt="" class="col-12">
             <img src="content/img/campaign-2.jpg" alt="" class="col-12">
