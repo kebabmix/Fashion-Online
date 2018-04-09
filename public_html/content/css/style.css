@@ -1,250 +1,182 @@
-/*------------------------------------------------------------------
-Project:        Project name here
-Version:        1.0
-Last update:    31/12/2017
-Author:         Joachim Lind Hadberg
-URL:            https://facebook.com/joachimlindhadberg
-COMMENT:        This framework is using meyerweb reset css v2.0
-
-00. Header
-01. General
-02. Typography
-03. Container
-04. Grid
-05. Block spacing
-06. Buttons
--------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------
-    00. HEADER START
----------------------------------------------------*/
-
-/*------ HEADER TOP START ------*/
-header div.container div.header_top {
-  margin: 0;
-  padding: 6px 0 0 0;
-  background-color: #2D2D2D;
-  overflow: hidden;
-}
-
-
-header div.container div.header_top div.header_top_left,
-header div.container div.header_top div.header_top_right {
-  float: none;
-  display: block;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_top div.header_top_left,
-  header div.container div.header_top div.header_top_right {
-    display: inline-block;
-  }
-
-  header div.container div.header_top div.header_top_left {
-    float: left;
-  }
-
-  @media screen and (min-width: 769px) {
-    header div.container div.header_top div.header_top_left {
-      margin-left: 3px;
-      padding: 0px 0 0 0;
-    }
-  }
-
-  header div.container div.header_top div.header_top_right {
-    float: right;
-  }
-}
-
-header div.container div.header_topdiv.header_top_left nav ul {
-  padding: 0;
-  text-align: center;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_top div.header_top_left nav ul {
-    margin: 0;
+.container {
     padding: 0;
-    text-align: left;
-  }
 }
 
-header div.container div.header_top div.header_top_left nav ul li {
-  margin: 0;
-  padding: 6px;
-  display: inline-block;
+.header_top {
+    background: #2d2d2d;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
 }
 
-header div.container div.header_top div.header_top_left nav ul li a {
-  margin: 0;
-  padding: 0;
-  color: #999999;
-  transition: color 0.15s ease-in-out;
-}
-
-header div.container div.header_top div.header_top_left nav ul li a:focus,
-header div.container div.header_top div.header_top_left nav ul li a:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-header div.container div.header_top div.sign_in {
-  margin: 0;
-  padding: 3px 6px;
-  text-align: center;
-  color: #999999;
-  width: 100%;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_top div.sign_in {
-    display: none;
-  }
-}
-
-header div.container div.header_top div.header_top_right form {
-  margin: 0;
-  padding: 0 12px;
-}
-
-header div.container div.header_top div.header_top_right form div.form-group {
-  text-align: center;
-  width: 100%;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_top div.header_top_right form div.form-group {
-    margin-bottom: 0;
+.header_top li {
     display: inline-block;
-    width: 175px;
-  }
+    padding: 15px;
 }
 
-header div.container div.header_top div.header_top_right form div.form-group input[type="text"],
-header div.container div.header_top div.header_top_right form div.form-group input[type="password"] {
-  margin: 0;
-  padding: 3px 12px;
-  width: 100%;
-  color: #999999;
-  background-color: #4a4a4a;
-  border: #4a4a4a;
-  border-radius: 25px;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_top div.header_top_right form div.form-group input[type="text"],
-  header div.container div.header_top div.header_top_right form div.form-group input[type="password"] {
-    width: 175px;
-  }
-}
-
-header div.container div.header_top div.header_top_right form button.btn-primary {
-  margin: auto;
-  width: 125px;
-  background-color: #ea6a53;
-  border: #ea6a53;
-  border-radius: 25px;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_top div.header_top_right form button.btn-primary {
-    padding: 3px;
-    width: 50px;
-  }
-}
-/*------ HEADER TOP END ------*/
-
-header div.container div.header_logo {
-  margin: 12px auto;
-  text-align: center;
-  width: 100%;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_logo {
-    text-align: left;
-    margin: 12px 6px;
-  }
-}
-
-/*------ HEADER BOTTOM START ------*/
-header div.container div.header_bottom {
-  margin: 0;
-  padding: 0;
-  background-color: #c3c3c3;
-  overflow: hidden;
-}
-
-header div.container div.header_bottom div.header_bottom_left,
-header div.container div.header_bottom div.header_bottom_right {
-  margin: 0;
-  padding: 0 12px;
-  float: none;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_bottom div.header_bottom_left {
-    padding: 0 3px;
-    float: left;
-  }
-
-  header div.container div.header_bottom div.header_bottom_right {
-    padding: 0 6px;
-    float: right;
-  }
-}
-
-header div.container div.header_bottom div.header_bottom_left nav,
-header div.container div.header_bottom div.header_bottom_left nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_bottom div.header_bottom_left nav {
-    margin: 6px 0 0 0;
-  }
-}
-
-header div.container div.header_bottom div.header_bottom_left nav ul li {
-  margin: 0;
-  padding: 0;
-  display: block;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_bottom div.header_bottom_left nav ul li {
-    padding: 6px;
-    display: inline-block;
-  }
-}
-
-header div.container div.header_bottom div.header_bottom_left nav ul li a {
-  padding: 6px 12px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-
-header div.container div.header_bottom div.header_bottom_right form div.form-group {
-  margin-bottom: 0;
-}
-
-header div.container div.header_bottom div.header_bottom_right form div.form-group input[type="text"] {
-  margin: 2px 0 12px 0;
-  padding: 3px 12px;
-  color: #999999;
-  width: 100%;
-  border-radius: 25px;
-}
-
-@media screen and (min-width: 769px) {
-  header div.container div.header_bottom div.header_bottom_right form div.form-group input[type="text"] {
-    margin: 6px 0;
-    padding: 3px 12px;
+.header_top li a {
     color: #999999;
-    width: 175px;
-    border-radius: 25px;
-  }
 }
-/*------ HEADER BOTTOM END ------*/
+
+.header_top ul,
+.header_top form {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.header_top form {
+    margin-top: 3px;
+    padding: 1rem;
+}
+
+.header_top .ml-auto {float: right;}
+
+.header_top .btn {
+    background-color: #ea6a53;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    color: #fff;
+    padding: 2px 10px;
+    margin-bottom: 5px;
+    line-height: 24px;
+    margin-top: 1rem;
+}
+
+.header_top input {
+    background-color: #4a4a4a;
+    border: none;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 3px 10px;
+}
+
+.header_top .ml-auto a {color: #fff;}
+
+input:focus {
+    outline: none;
+    color: #999;
+}
+
+.logo {
+    margin: 1rem 0;
+}
+
+.navbar {
+    background-color: #c3c3c3;
+    padding: 0;
+}
+
+.navbar ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.navbar li a {
+    color: #fff;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: none;
+    -webkit-transition: ease .2s;
+    -moz-transition: ease .2s;
+    -o-transition: ease .2s;
+    transition: ease .2s;
+}
+
+.navbar li a:hover, .navbar li a.active {
+    background-color: #2d2d2d;
+    padding-bottom: 20px;
+}
+
+.navbar form {
+    position: relative;
+}
+
+.navbar form button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-top: 1rem;
+}
+
+.search {
+    border-radius: 25px;
+    border: none;
+    padding: 2px 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.navbar-nav li {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-nav li:first-child {
+    border-top: 1px solid #eee;
+}
+
+.navbar-toggler:focus {outline: none;}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 3px;
+    display: block;
+    background-color: #eee;
+    margin: 6px 0;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -5px);
+    transform: rotate(45deg) translate(-7px, -5px);
+}
+
+/* Desktop styles */
+
+@media (min-width: 992px) {
+    .container {padding: 0 15px;}
+    
+    .navbar form {position: relative;}
+    
+    .navbar-nav li:first-child{border:none;}
+    
+    .search,
+    .navbar form button {
+        margin: 0;
+    }
+    
+    .header_top {
+        padding: 0 10px 0 0;
+        flex-direction: row;
+    }
+    
+    .navbar li a {
+        border-right: 1px solid #eeeeee;
+        padding: 10px 25px;
+    }
+    
+    .header_top .btn {margin: 0;}
+}
