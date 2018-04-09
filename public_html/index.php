@@ -28,16 +28,16 @@ require_once 'incl/header.php'; ?>
 <!--- OWL SLIDER SECTION START --->
 <section class="row carousel">
     <h1>other products</h1>
-    <p>Check our all lastest product in this section</p>
     <div class="col-md-11">
         <div class="owl-carousel">
-            <div><img src="http://via.placeholder.com/300x200" alt=""></div>
-            <div><img src="http://via.placeholder.com/300x200" alt=""></div>
-            <div><img src="http://via.placeholder.com/300x200" alt=""></div>
-            <div><img src="http://via.placeholder.com/300x200" alt=""></div>
-            <div><img src="http://via.placeholder.com/300x200" alt=""></div>
-            <div><img src="http://via.placeholder.com/300x200" alt=""></div>
-            <div><img src="http://via.placeholder.com/300x200" alt=""></div>
+            <div><a href="#"><img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%"></a></div>
+            <div><a href="#"><img src="content/img/s-l1601_300x200.jpg" alt="s-l1601-300x200" width="100%"></a></div>
+            <div><a href="#"><img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%"></a></div>
+            <div><a href="#"><img src="content/img/s-l1601_300x200.jpg" alt="s-l1601-300x200" width="100%"></a></div>
+            <div><a href="#"><img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%"></a></div>
+            <div><a href="#"><img src="content/img/s-l1601_300x200.jpg" alt="s-l1601-300x200" width="100%"></a></div>
+            <div><a href="#"><img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%"></a></div>
+            <div><a href="#"><img src="content/img/s-l1601_300x200.jpg" alt="s-l1601-300x200" width="100%"></a></div>
         </div>
     </div>
 </section>

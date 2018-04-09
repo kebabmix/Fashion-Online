@@ -113,9 +113,8 @@ h1, h2, h3, h4 {
         display: flex;
     }
 }
-
 .owl-next, .owl-prev {
-    font-size: 3rem!important;
+    font-size: 50px!important;
     display: block!IMPORTANT;
     border:0px solid black;
     width: 15px;
@@ -125,25 +124,12 @@ h1, h2, h3, h4 {
 
 .owl-prev {
     top: 5%;
-    margin-left: -60px;
+    margin-left: -30px;
 }
 
 .owl-next {
     top: 3%;
     right: -25px;
-}
-
-.owl-prev i, .owl-next i {
-    background: #000;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 35px;
-}
-
-.owl-prev:focus, .owl-next:focus {
-    outline: none;
 }
 
 .carousel {
