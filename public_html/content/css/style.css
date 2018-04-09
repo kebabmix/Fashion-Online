@@ -113,3 +113,38 @@ h1, h2, h3, h4 {
         display: flex;
     }
 }
+.owl-next, .owl-prev {
+    font-size: 50px!important;
+    display: block!IMPORTANT;
+    border:0px solid black;
+    width: 15px;
+    height: 100px;
+    position: absolute;
+}
+
+.owl-prev {
+    top: 5%;
+    margin-left: -30px;
+}
+
+.owl-next {
+    top: 3%;
+    right: -25px;
+}
+
+.carousel {
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.carousel h1 {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.carousel .col-md-11 {
+    margin: 0 auto;
+}
