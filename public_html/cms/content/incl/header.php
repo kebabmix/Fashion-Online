@@ -16,15 +16,15 @@ $strCss = isset($strCss) && !empty($strCss) ? $strCss : "bootstrap.min,cms-style
 
 <body>
 
-<div class="gridContainer">
-    <nav class="sidebar">
+<div>
+    <nav>
         <div class="brand">CMS</div>
         <ul>
-            <li class="sidebar-item"><a href="?mode=list"><i class="fa fa-bars" aria-hidden="true"></i>Oversigt</a></li>
-            <li class="sidebar-item"><a href="?mode=create"><i class="fa fa-envelope-o" aria-hidden="true"></i>Nyhedsbrev</a></li>
-            <li class="sidebar-item"><a href="?mode=create"><i class="fa fa-search" aria-hidden="true"></i>Search</a></li>
-            <li class="sidebar-item"><a href="?mode=create"><i class="fa fa-upload" aria-hidden="true"></i>Upload</a></li>
-            <li class="sidebar-item"><a href="?mode=create"><i class="fa fa-user" aria-hidden="true"></i>User</a></li>
+            <li><a href="">Noget</a></li>
+            <li><a href="">Noget</a></li>
+            <li><a href="">Noget</a></li>
+            <li><a href="">Noget</a></li>
+            <li><a href="">Noget</a></li>
         </ul>
         <a href="?action=logout" class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
     </nav>
