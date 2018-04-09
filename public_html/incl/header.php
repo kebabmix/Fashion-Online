@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <!--- META DATA START --->
     <meta charset="utf-8">
     <title>Fashion Online | <?= $PageName ?></title>
@@ -19,7 +18,6 @@
 
     <!--- CDN ICONS --->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body class="container">
@@ -71,4 +69,7 @@
             </form>
         </div>
     </nav><!-- NAVIGATION END -->
-</header><!--- HEADER SECTION END --->
+</header><!--- HEADER SECTION END ---
+
+</header>
+<!--- HEADER SECTION END --->

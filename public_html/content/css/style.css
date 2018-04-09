@@ -135,13 +135,109 @@ input:focus {
 .bar3 {
     width: 30px;
     height: 3px;
+
+/* Overall styles */
+
+body {
+    background-color: #f6f6f4;
+}
+
+.topnews {
+    padding-bottom: 1rem;
+}
+
+/* FONT */
+
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../font/bebas/bebas___-webfont.eot');
+    src: url('../font/bebas/bebas___-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/bebas/bebas___-webfont.woff') format('woff'),
+    url('../font/bebas/bebas___-webfont.ttf') format('truetype'),
+    url('../font/bebas/bebas___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: bebasregular;
+}
+
+/* Hvis det trigger jer, så sig det lmao */
+
+p {
+  color: #a0a0a0;
+}
+
+/* Sidearea */
+
+.sidearea img {
+    padding: 0 0 1rem;
+}
+
+.newsletter {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.newsletter hr {
+    margin-top: 0;
+}
+
+.newsletter input {
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 73%;
+    padding: 5px 15px;
+}
+
+.newsletter .btn {
     display: block;
-    background-color: #eee;
-    margin: 6px 0;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 5px 25px;
+    margin-top: 2rem;
+}
+
+.newsletter label {
+    padding-left: 0;
+    color: #b6b6b6;
+}
+
+/* Lastest arrivals */
+
+#lastest-arrivals {padding-right: 0;}
+#lastest-arrivals .col-md-8 {padding: 0;}
+#lastest-arrivals h1 {margin: 0;}
+#lastest-arrivals small {color: #999;}
+
+
+/* Footer CSS */
+.fColor {
+    background-color: #2d2d2d;
+}
+
+.fStyle {
+    color: #a0a0a0;
+    padding-top: 30px;
+    padding-bottom: 55px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 1rem;
+}
+
+.fStyle span a {
+    color: #ffffff;
+}
+
+.fStyle a {
+    color: #a0a0a0;
+}
+
+.fLogo {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .change .bar1 {
@@ -153,10 +249,13 @@ input:focus {
     -webkit-transform: rotate(45deg) translate(-7px, -5px);
     transform: rotate(45deg) translate(-7px, -5px);
 }
-
+    
 /* Desktop styles */
 
 @media (min-width: 992px) {
+    .imgPadFix {
+        padding-right: 0px;
+    }
     .container {padding: 0 15px;}
     
     .navbar form {position: relative;}
@@ -179,4 +278,14 @@ input:focus {
     }
     
     .header_top .btn {margin: 0;}
+
+    .sidearea {
+        float: right;
+        display: grid;
+        padding-left: 1rem;
+    }
+
+    .topnews {
+        display: flex;
+    }
 }
