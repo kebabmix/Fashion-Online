@@ -168,7 +168,32 @@ input:focus {
 .bar3 {
     width: 30px;
     height: 3px;
+    background: #fff;
+    margin: 5px 0;
+    display: block;
+    -webkit-transition: ease .3s;
+    -moz-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
 }
+
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 4px);
+    -moz-transform: rotate(-45deg) translate(-3px, 4px);
+    -ms-transform: rotate(-45deg) translate(-3px, 4px);
+    transform: rotate(-45deg) translate(-3px, 4px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -4px);
+    -moz-transform: rotate(45deg) translate(-7px, -4px);
+    -ms-transform: rotate(45deg) translate(-7px, -4px);
+    transform: rotate(45deg) translate(-7px, -4px);
+}
+
 
 /* Sidearea */
 
