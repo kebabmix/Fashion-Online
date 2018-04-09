@@ -31,9 +31,15 @@ require_once 'incl/header.php'; ?>
     <div class="owl-carousel owl-theme owl-loaded">
       <div class="owl-stage-outer">
         <div class="owl-stage">
-          <div class="owl-item">...</div>
-          <div class="owl-item">...</div>
-          <div class="owl-item">...</div>
+          <div class="owl-item">
+            <a href="#"><img src="content/img/banner2.png" alt="banner2" width="100%"></a>
+          </div>
+          <div class="owl-item">
+            <a href="#"><img src="content/img/banner2.png" alt="banner2" width="100%"></a>
+          </div>
+          <div class="owl-item">
+            <a href="#"><img src="content/img/banner2.png" alt="banner2" width="100%"></a>
+          </div>
         </div>
       </div>
 
