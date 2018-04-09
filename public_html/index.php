@@ -38,7 +38,6 @@ require_once 'incl/header.php'; ?>
             <div><img src="http://via.placeholder.com/300x200" alt=""></div>
             <div><img src="http://via.placeholder.com/300x200" alt=""></div>
         </div>
-
     </div>
 </section>
 <!--- OWL SLIDER SECTION END --->
