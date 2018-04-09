@@ -25,6 +25,6 @@ require_once 'incl/header.php'; ?>
         </aside>
 </section>
 
-<!--- HEADER INCLUDES START --->
+<!--- FOOTER INCLUDES START --->
 <?php require_once 'incl/footer.php'; ?>
-<!--- HEADER INCLUDES END --->
+<!--- FOOTER INCLUDES END --->

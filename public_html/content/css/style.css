@@ -25,6 +25,12 @@ h1, h2, h3, h4 {
     font-family: bebasregular;
 }
 
+/* Hvis det trigger jer, så sig det lmao */
+
+p {
+  color: #a0a0a0;
+}
+
 /* Sidearea */
 
 .sidearea img {
