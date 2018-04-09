@@ -24,6 +24,52 @@
 
 <!--- HEADER SECTION START --->
 <header>
+    <div class="header_top">
+        <ul>
+            <li><a href="#">Find retailer</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="ml-auto">
+            <a href="#">Sign In</a>
+            <form action="">
+                <input type="text" placeholder="Username" class="col-md-5">&nbsp;
+                <input type="password" placeholder="Password" class="col-md-5">&nbsp;
+                <button type="submit" class="btn">Go</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LOGO -->
+    <a href="index.php">
+        <img src="/content/img/logo/Fashion_online_-_200x60.png" alt="Fashion-online-logo" class="logo">
+    </a>
+
+    <!-- NAVIGATION -->
+    <nav class="nav navbar navbar-expand-lg">
+        <!-- HAMBURGER MENU -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                onclick="myFunction(this)">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+        <!-- HAMBURGER MENU END -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Mens</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Collections</a></li>
+            </ul>
+            <form action="" class="col-md-3">
+                <input type="text" name="search" placeholder="Search.." class="search col-12">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </nav><!-- NAVIGATION END -->
+</header><!--- HEADER SECTION END ---
 
 </header>
 <!--- HEADER SECTION END --->

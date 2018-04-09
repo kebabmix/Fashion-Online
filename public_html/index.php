@@ -2,7 +2,6 @@
 <?php $PageName = "Forside";
 require_once 'incl/header.php'; ?>
 <!--- HEADER INCLUDES END --->
-
 <section class="row">
     <div class="topnews">
         <img src="content/img/banner1.png" class="col-md-8 imgPadFix"/>
