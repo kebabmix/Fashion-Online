@@ -69,9 +69,11 @@ p {
 
 /* Lastest arrivals */
 
-#lastest-arrivals .col-md-8 {
-    padding: 0;
-}
+#lastest-arrivals {padding-right: 0;}
+#lastest-arrivals .col-md-8 {padding: 0;}
+#lastest-arrivals h1 {margin: 0;}
+#lastest-arrivals small {color: #999;}
+
 
 /* Footer CSS */
 .fColor {
@@ -107,7 +109,7 @@ p {
 @media only screen and (min-width: 960px) {
     /* Top Banner CSS */
     .imgPadFix {
-        padding: 0px;
+        padding-right: 0px;
     }
 
     .fLogo {
