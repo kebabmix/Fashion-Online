@@ -25,24 +25,6 @@ require_once 'incl/header.php'; ?>
     </aside>
 </section>
 
-<!--- OWL SLIDER SECTION START --->
-<section class="row carousel">
-    <h1>other products</h1>
-    <div class="col-md-11">
-        <div class="owl-carousel">
-            <div><a href="#"><img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%"></a></div>
-            <div><a href="#"><img src="content/img/s-l1601_300x200.jpg" alt="s-l1601-300x200" width="100%"></a></div>
-            <div><a href="#"><img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%"></a></div>
-            <div><a href="#"><img src="content/img/s-l1601_300x200.jpg" alt="s-l1601-300x200" width="100%"></a></div>
-            <div><a href="#"><img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%"></a></div>
-            <div><a href="#"><img src="content/img/s-l1601_300x200.jpg" alt="s-l1601-300x200" width="100%"></a></div>
-            <div><a href="#"><img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%"></a></div>
-            <div><a href="#"><img src="content/img/s-l1601_300x200.jpg" alt="s-l1601-300x200" width="100%"></a></div>
-        </div>
-    </div>
-</section>
-<!--- OWL SLIDER SECTION END --->
-
 <!--- HEADER INCLUDES START --->
 <?php require_once 'incl/footer.php'; ?>
 <!--- HEADER INCLUDES END --->

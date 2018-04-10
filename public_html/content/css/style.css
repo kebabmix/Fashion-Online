@@ -139,10 +139,16 @@ h1, h2, h3, h4 {
     background-color: #fff;
 }
 
-.carousel h1 {
-    border-bottom: 1px solid #eee;
+.carousel h1,.carousel p {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.carousel hr {
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.1);
+    height: 1px;
 }
 
 .carousel .col-md-11 {
