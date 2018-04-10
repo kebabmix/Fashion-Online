@@ -5,42 +5,17 @@
     <hr>
     <div class="col-md-11">
         <div class="owl-carousel">
-            <figure>
-                <a href="#">
-                    <img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%">
-                    <p>Text</p>
-                </a>
-            </figure>
-            <figure>
-                <a href="#">
-                    <img src="content/img/s-l1601_300x200.jpg" alt="s-l1600-300x200" width="100%">
-                    <p>Text</p>
-                </a>
-            </figure>
-            <figure>
-                <a href="#">
-                    <img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%">
-                    <p>Text</p>
-                </a>
-            </figure>
-            <figure>
-                <a href="#">
-                    <img src="content/img/s-l1601_300x200.jpg" alt="s-l1600-300x200" width="100%">
-                    <p>Text</p>
-                </a>
-            </figure>
-            <figure>
-                <a href="#">
-                    <img src="content/img/s-l1600_300x200.jpg" alt="s-l1600-300x200" width="100%">
-                    <p>Text</p>
-                </a>
-            </figure>
-            <figure>
-                <a href="#">
-                    <img src="content/img/s-l1601_300x200.jpg" alt="s-l1600-300x200" width="100%">
-                    <p>Text</p>
-                </a>
-            </figure>
+            <?php $products = new Product();
+            $latestProducts = $products->getRandomProducts();
+            foreach ($latestProducts as $product) : ?>
+                <figure>
+                    <a href="details.php?product=<?= $product['id'] ?>">
+                        <img class="product-list__image" src="content/img/products/<?= $product['thumbnail'] ?>"
+                             alt="<?= $product['title'] ?>">
+                        <?= $product['title'] ?>
+                    </a>
+                </figure>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
