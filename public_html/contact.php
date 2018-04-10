@@ -30,7 +30,7 @@ require_once 'incl/header.php'; ?>
 <div class="col-md-8 contactInfo">
 <h3>Fashion Online</h3>
 <br />
-<p>
+<p>m
   Address:  Lindholm Brygge 9
 <br /> zipcode:   9440 norresundby
 <br /> country:  denmark
