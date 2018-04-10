@@ -244,7 +244,6 @@ input:focus {
     margin-bottom: 30px;
 }
 
-<<<<<<< HEAD
 .contactForm {
 }
 
@@ -291,8 +290,6 @@ input:focus {
   font-family: bebasregular;
 }
 
-
-=======
 /* Carousel */
 
 .owl-next, .owl-prev {
@@ -350,7 +347,6 @@ input:focus {
 
 .owl-prev:focus, .owl-next:focus {
     outline: none;
->>>>>>> b41ea32e85ae9c215a9797e833404b03fdfc640a
 }
 
 /* Footer CSS */
