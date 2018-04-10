@@ -27,8 +27,15 @@ require_once 'incl/header.php'; ?>
       <button class="btn ml-auto" type="submit">Send us the message</button>
   </form>
 </div>
-<div class="col-md-8">
-<h1>Fashion Online</h1>
+<div class="col-md-8 contactInfo">
+<h3>Fashion Online</h3>
+<br />
+<p>
+  Address:  Lindholm Brygge 9
+<br /> zipcode:   9440 norresundby
+<br /> country:  denmark
+<br /> phone  +45 12 34 56 78
+</p>
 </div>
 </section>
 <!--- TOP BANNER/TEXT END --->

@@ -280,6 +280,18 @@ input:focus {
   font-family: bebasregular;
   line-height: 45px;
   left: 0;
+}
+
+.contactInfo {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.contactInfo P {
+  font-family: bebasregular;
+}
+
+
 =======
 /* Carousel */
 
