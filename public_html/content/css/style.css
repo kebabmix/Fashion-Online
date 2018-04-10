@@ -168,32 +168,7 @@ input:focus {
 .bar3 {
     width: 30px;
     height: 3px;
-    background: #fff;
-    margin: 5px 0;
-    display: block;
-    -webkit-transition: ease .3s;
-    -moz-transition: ease .3s;
-    -o-transition: ease .3s;
-    transition: ease .3s;
 }
-
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-3px, 4px);
-    -moz-transform: rotate(-45deg) translate(-3px, 4px);
-    -ms-transform: rotate(-45deg) translate(-3px, 4px);
-    transform: rotate(-45deg) translate(-3px, 4px);
-}
-.change .bar2 {
-    opacity: 0;
-}
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-7px, -4px);
-    -moz-transform: rotate(45deg) translate(-7px, -4px);
-    -ms-transform: rotate(45deg) translate(-7px, -4px);
-    transform: rotate(45deg) translate(-7px, -4px);
-}
-
 
 /* Sidearea */
 
@@ -271,6 +246,42 @@ input:focus {
     margin-bottom: 30px;
 }
 
+.contactForm {
+}
+
+.contactForm input {
+  margin-bottom:1.5rem;
+  background-color: #ebebeb;
+  border: none;
+  width: 371px;
+  height: 45px;
+  font-family: bebasregular;
+  line-height: 45px;
+  padding: 20px 18px 20px 18px
+}
+
+.contactForm textarea {
+  resize: none;
+  background-color: #ebebeb;
+  border: none;
+  width: 371px;
+  height: 190px;
+  font-family: bebasregular;
+  line-height: 190px;
+  padding: 20px 18px 20px 18px;
+  overflow: hidden;
+}
+
+.contactForm button {
+  margin-bottom:1.5rem;
+  background-color: #ebebeb;
+  border: none;
+  width: 175px;
+  height: 45px;
+  font-family: bebasregular;
+  line-height: 45px;
+  left: 0;
+}
 
 /* Footer CSS */
 .fColor {

@@ -17,19 +17,18 @@ require_once 'incl/header.php'; ?>
 </section>
 <!--- TOP BANNER/TEXT END --->
 <br />
-<br />
-<section class="">
+<section class="row">
 <div class="col-md-4">
   <form class="contactForm" method="post">
       <input type="name" name="name" placeholder="Name" id="inputName">
-      <input type="email" name="email" placeholder="E-Mail" id="inputEmail" style="margin-bottom:1rem;">
-      <textarea placeholder="Message"></textarea>
+      <input type="email" name="email" placeholder="E-Mail" id="inputEmail">
+      <textarea non-re placeholder="Message"></textarea>
       <br>
-      <button class="btn ml-auto" type="submit">Signup</button>
+      <button class="btn ml-auto" type="submit">Send us the message</button>
   </form>
 </div>
 <div class="col-md-8">
-
+<h1>Fashion Online</h1>
 </div>
 </section>
 <!--- TOP BANNER/TEXT END --->
