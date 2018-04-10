@@ -227,14 +227,23 @@ input:focus {
 .linebox {
   background-color: #bc3726;
   color: white;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  height: 34px;
   width: 380px;
-
+  display: flex;
+  position: relative;
+  align-items: center;
 }
 
 .linebox span {
   margin-left: 1.5rem;
+}
+
+.triangle {
+    position: absolute;
+    border-bottom: 34px solid #bc3726;
+    border-right: 34px solid transparent;
+    right: -34px;
+    margin-bottom: 30px;
 }
 
 
