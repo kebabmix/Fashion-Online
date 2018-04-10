@@ -271,6 +271,62 @@ input:focus {
     margin-bottom: 30px;
 }
 
+/* Carousel */
+
+.owl-next, .owl-prev {
+    font-size: 50px!important;
+    display: block!IMPORTANT;
+    border:0px solid black;
+    width: 15px;
+    height: 100px;
+    position: absolute;
+}
+
+.owl-prev {
+    top: 5%;
+    margin-left: -60px;
+}
+
+.owl-next {
+    top: 3%;
+    right: -25px;
+}
+
+.carousel {
+    display: flex;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.carousel h1,.carousel p {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.carousel hr {
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.1);
+    height: 1px;
+}
+
+.carousel .col-md-11 {
+    margin: 0 auto;
+}
+
+.owl-prev i, .owl-next i {
+    background: #000;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 35px;
+}
+
+.owl-prev:focus, .owl-next:focus {
+    outline: none;
+}
 
 /* Footer CSS */
 .fColor {
