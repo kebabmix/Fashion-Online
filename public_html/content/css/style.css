@@ -308,9 +308,17 @@ input:focus {
     margin-left: -60px;
 }
 
+.owl-prev i:before {
+    margin-left: -5px;
+}
+
 .owl-next {
     top: 3%;
     right: -60px;
+}
+
+.owl-next i:before {
+    margin-right: -5px;
 }
 
 .carousel {
@@ -431,4 +439,6 @@ img {
         float: right;
         margin-top: -55px;
     }
+
+    #lastest-arrivals .row {margin-right: -15px;}
 }
