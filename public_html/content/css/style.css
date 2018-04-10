@@ -129,7 +129,7 @@ input:focus {
 
 .navbar li a:hover, .navbar li a.active {
     background-color: #2d2d2d;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .navbar form {
@@ -389,6 +389,7 @@ img {
     .navbar li a {
         border-right: 1px solid #eeeeee;
         padding: 14px 25px;
+        line-height: normal;
     }
 
     .navbar-nav li:first-child{
@@ -397,7 +398,6 @@ img {
 
     .sidearea {
         float: right;
-        display: grid;
         padding-left: 1rem;
     }
 
