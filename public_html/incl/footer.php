@@ -1,7 +1,7 @@
 <!--- OWL SLIDER SECTION START --->
 <section class="row carousel">
     <h1>other products</h1>
-    <p>Check our all lastest products in this section</p>
+    <small>Check our all lastest products in this section</small>
     <hr>
     <div class="col-md-11">
         <div class="owl-carousel">

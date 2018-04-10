@@ -29,6 +29,10 @@ p {
   color: #a0a0a0;
 }
 
+small {
+    color: #999;
+}
+
 /* Header styles */
 .container {
     padding: 0;
@@ -236,8 +240,6 @@ input:focus {
 #lastest-arrivals {padding-right: 0;}
 #lastest-arrivals .col-md-8 {padding: 0;}
 #lastest-arrivals h1 {margin: 0;}
-#lastest-arrivals small {color: #999;}
-
 
 /* Contact CSS */
 .ctcBanner {
