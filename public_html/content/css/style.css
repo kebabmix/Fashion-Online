@@ -279,9 +279,10 @@ input:focus {
     font-size: 50px!important;
     display: block!IMPORTANT;
     border:0px solid black;
-    width: 15px;
+    width: 50px;
     height: 100px;
     position: absolute;
+    z-index: 999;
 }
 
 .owl-prev {
@@ -291,7 +292,7 @@ input:focus {
 
 .owl-next {
     top: 3%;
-    right: -25px;
+    right: -60px;
 }
 
 .carousel {
