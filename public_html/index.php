@@ -1,5 +1,7 @@
 <!--- HEADER INCLUDES START --->
-<?php $PageName = "Forside";
+<?php
+require "incl/init.php";
+$PageName = "Forside";
 require_once 'incl/header.php'; ?>
 <!--- HEADER INCLUDES END --->
 
@@ -8,41 +10,24 @@ require_once 'incl/header.php'; ?>
         <img src="content/img/banner1.png" class="col-md-8 imgPadFix"/>
         <img src="content/img/banner2.png" class="col-md-4"/>
     </div>
+    <?php
+    $product = new product();
+    $latestProducts = $product->getLatestProducts();
+    ?>
     <div id="lastest-arrivals" class="col-md-8">
         <h1>lastest arrivals</h1>
-        <small>Check our all lastest prodyct in this section</small>
+        <small>Check our all lastest products in this section</small>
         <hr>
         <div class="row">
-            <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">More ></a>
-            </figure>
-            <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">More ></a>
-            </figure>
-            <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">More ></a>
-            </figure>
-            <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">More ></a>
-            </figure>
-            <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">More ></a>
-            </figure>
-            <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">More ></a>
-            </figure>
+            <?php foreach ($latestProducts as $product) : ?>
+                <figure class="col-md-4">
+                    <img class="col-12" src='/content/img/products/<?=$product['thumbnail']?>' alt='<?=$product['title']?>'>
+                    <figcaption>
+                        <?=$product['title']?><br>
+                        <a href="details.php?id=<?=$product['id']?>">More ></a>
+                    </figcaption>
+                </figure>
+            <?php endforeach ; ?>
         </div>
     </div>
     <aside class="col-md-4 sidearea">

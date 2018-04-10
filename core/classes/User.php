@@ -1,11 +1,10 @@
 <?php
 
-class User {
+class user {
 
     public $id;
     public $username;
     public $password;
-    public $created;
     public $suspended;
     public $deleted;
 
@@ -25,7 +24,6 @@ class User {
             "id" => "Bruger ID",
             "username" => "Brugernavn",
             "password" => "Adgangskode",
-            "created" => "Oprettelsesdato",
             "suspended" => "Suspenderet"
         );
 
@@ -33,7 +31,6 @@ class User {
             "id" => ["hidden", "Bruger ID", FALSE, FILTER_VALIDATE_INT, 0],
             "username" => ["text", "Brugernavn", TRUE, FILTER_SANITIZE_STRING, ""],
             "password" => ["password", "Adgangskode", TRUE, FILTER_SANITIZE_STRING, ""],
-            "created" => ["hidden", "Oprettet", TRUE, FILTER_SANITIZE_STRING, ""],
             "suspended" => ["checkbox", "Suspenderet", FALSE, FILTER_SANITIZE_STRING, ""]
         ];
 
@@ -59,7 +56,6 @@ class User {
         }
     }
 
-
     public function save() {
 
         $params = [];
@@ -84,7 +80,6 @@ class User {
 
         } else {
 
-            $this->created = time();
             $this->password = password_hash($this->password, PASSWORD_BCRYPT);
             $this->suspended = ($this->suspended) ? $this->suspended : 0;
 
@@ -101,7 +96,6 @@ class User {
 
             return $this->db->_getinsertid();
         }
-
     }
 
 

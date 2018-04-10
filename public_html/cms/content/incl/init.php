@@ -8,10 +8,10 @@ require_once COREPATH . 'classes/autoload.php';
 $db = new dbconf();
 
 
-$auth = new Auth();
+$auth = new auth();
 $auth->authenticate();
 
 if(!$auth->user_id) {
-    echo $auth->loginform(Auth::ERROR_NOACCESS);
+    echo $auth->loginform(auth::ERROR_NOACCESS);
     exit();
 }

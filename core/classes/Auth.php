@@ -1,6 +1,6 @@
 <?php
 
-class Auth {
+class auth {
     public $username;
     public $password;
     public $user_id;
@@ -70,14 +70,13 @@ class Auth {
 
                 $params = array(
                     session_id(),
-                    $row[0]["id"], //User ID
+                    $row[0]["id"], //user ID
                     self::ISLOGGEDIN,
-                    time(), //CURRENT TIME STAMP
                     time() //CURRENT TIME STAMP
                 );
 
-                $strInsertSession = "INSERT INTO usersession (id,user_id,isloggedin, created, lastaction) " .
-                    "VALUES(?,?,?,?,?)";
+                $strInsertSession = "INSERT INTO usersession (id,user_id,isloggedin, lastaction) " .
+                    "VALUES(?,?,?,?)";
                 $this->db->_query($strInsertSession, $params);
 
 

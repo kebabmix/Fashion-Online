@@ -111,7 +111,7 @@ input:focus {
 
 .navbar li {
     display: inline-block;
-    padding: 10px 0;
+    padding:0;
 }
 
 .navbar li a {
@@ -125,11 +125,12 @@ input:focus {
     transition: ease .2s;
     font-family: 'bebasregular', sans-serif;
     font-weight: 400;
+    display: block;
+    padding: 10px 0;
 }
 
-.navbar li a:hover, .navbar li a.active {
+.navbar li a:hover, .navbar li a.active{
     background-color: #2d2d2d;
-    padding-bottom: 25px;
 }
 
 .navbar form {
@@ -169,6 +170,29 @@ input:focus {
 .bar3 {
     width: 30px;
     height: 3px;
+    display: block;
+    background: #fff;
+    margin: 5px 0;
+    -webkit-transition: ease .3s;
+    -moz-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 4px);
+    -moz-transform: rotate(-45deg) translate(-8px, 4px);
+    -ms-transform: rotate(-45deg) translate(-8px, 4px);
+    transform: rotate(-45deg) translate(-8px, 4px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -4px);
+    -moz-transform: rotate(45deg) translate(-7px, -4px);
+    -ms-transform: rotate(45deg) translate(-7px, -4px);
+    transform: rotate(45deg) translate(-7px, -4px);
 }
 
 /* Sidearea */
@@ -410,7 +434,6 @@ img {
     }
 
     .header_top {
-        padding: 0 10px 0 0;
         flex-direction: row;
     }
 
@@ -419,10 +442,19 @@ img {
     .navbar li a {
         border-right: 1px solid #eeeeee;
         padding: 14px 25px;
+        display: initial;
+    }
+
+    .navbar li {
+        padding: 10px 0;
     }
 
     .navbar-nav li:first-child{
         border-top: none;
+    }
+
+    .navbar li a:hover, .navbar li a.active {
+        padding-bottom: 25px;
     }
 
     .sidearea {

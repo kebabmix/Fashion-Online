@@ -1,54 +1,103 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: chri798x
- * Date: 09-04-2018
- * Time: 12:53
- */
 
-class Product {
-    public $id;
-    public $thumbnail;
-    public $title;
-    public $description;
-    public $categoryid;
-    public $collectionid;
+class product {
 
-    public $arrLabels;
-    public $arrFormElms;
-    public $arrValues;
     private $db;
 
+    public $id;
+    public $title;
+    public $description;
+    public $catgory;
+    public $collection;
+    public $gender;
 
     public function __construct() {
         global $db;
         $this->db = $db;
-
-        $this->arrLabels = array(
-            "id" => "Produkt ID",
-            "thumbnail" => "Billede",
-            "title" => "Produktnavn",
-            "desciption" => "Beskrivelse",
-            "category_id" => "Kategori",
-            "collection_id" => "Kollektion"
-        );
-
-        $this->arrFormElms = [
-            "id" => ["hidden", "Produkt ID", FALSE, FILTER_VALIDATE_INT, 0],
-            "thumbnail" => ["text", "Billede", TRUE, FILTER_SANITIZE_STRING, ""],
-            "title" => ["text", "Produktnavn", TRUE, FILTER_SANITIZE_STRING, ""],
-            "desciption" => ["text", "Beskrivelse", TRUE, FILTER_SANITIZE_STRING, ""],
-            "category_id" => ["select", "Kategori", FALSE, FILTER_SANITIZE_STRING, ""],
-            "collection_id" => ["select", "Kollektion", FALSE, FILTER_SANITIZE_STRING, ""]
-        ];
-
-        $this->arrValues = array();
+    }
+    public function getProduct($id) {
+        $params = array($id);
+        $sql = "SELECT * FROM product WHERE id = ? AND deleted IS NULL";
+        $row = $this->db->_fetch_array($sql, $params);
+        $row = call_user_func_array("array_merge", $row);
+        $this->id=$row["id"];
+        $this->thumbnail=$row["thumbnail"];
+        $this->title=$row["title"];
     }
 
-    public function getlist(){
-        $sql = "SELECT * FROM product " .
-            "WHERE deleted = 0";
+    public function getAllProducts() {
+        $sql = "SELECT * FROM product";
         return $this->db->_fetch_array($sql);
     }
+    public function getLatestProducts() {
+        $sql = "SELECT * FROM product WHERE deleted IS NULL ORDER BY created DESC LIMIT 6";
+        return $this->db->_fetch_array($sql);
+    }
+    public function getRandomProducts() {
+        $sql = "SELECT * FROM product WHERE deleted IS NULL ORDER BY RAND() LIMIT 15";
+        return $this->db->_fetch_array($sql);
+    }
+    public function getCollectionProducts($collection, $category) {
+        $params = array(
+            $collection,
+            $category
+        );
+        $sql = "SELECT * FROM product WHERE collection_id = ? AND category_id = ?";
+        return $this->db->_fetch_array($sql, $params);
+    }
+    public function delete($id){
+        $sql = "UPDATE product SET deleted = 1 WHERE id = $id";
+        return $this->db->_query($sql);
+    }
+    public function save($id, $fileDestination){
+        if (!empty($_FILES['file'])) {
+            $file = $_FILES['file'];
 
+            $fileName = $file['name'];
+            $fileTmpName = $file['tmp_name'];
+            $fileSize = $file['size'];
+            $fileError = $file['error'];
+            $fileType = $file['type'];
+
+            $fileExt = explode('.', $fileName);
+            $fileActualExt = strtolower(end($fileExt));
+
+            $fileNameNew = uniqid('', true) . "." . $fileActualExt;
+            $fileDestinationWithName = $fileDestination . $fileNameNew;
+
+            $allowed = array('jpg', 'png', 'gif', 'jpeg');
+
+            if (in_array($fileActualExt, $allowed)) {
+                //Checks for errors
+                if ($fileError === 0) {
+
+                    //Move raw file
+                    move_uploaded_file($fileTmpName, DOCROOT . $fileDestinationWithName);
+
+                    $params = array(
+                        $fileNameNew,
+                        $this->title,
+                        $this->description,
+                        $this->category,
+                        $this->collection,
+                        $this->gender
+                    );
+
+                    $sql = "INSERT INTO product(thumbnail, title, description, category_id, collection_id, gender) VALUES (?,?,?,?,?,?)";
+
+                    $this->db->_query($sql, $params);
+
+                    /* Return new id */
+                    return $this->db->_getinsertid();
+
+                    header('Location:' . DOCROOT . 'cms/products.php');
+
+                } else {
+                    echo "Fejl i uploading af fil: " . $_FILES["file"]["error"];
+                }
+            } else {
+                echo "Du kan ikke uploade denne type filer";
+            }
+        }
+    }
 }

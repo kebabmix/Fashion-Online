@@ -7,7 +7,7 @@ switch (strtoupper($mode)) {
     default:
     case "LIST":
         include DOCROOT . "/cms/content/incl/header.php";
-        $user = new User();
+        $user = new user();
 
         $users = array();
 
@@ -42,7 +42,7 @@ switch (strtoupper($mode)) {
         ];
         echo textPresenter::presentpanel($strModuleName, "Vis detaljer", $arrButtonPanel);
 
-        $user = new User();
+        $user = new user();
         $user->getuser($id);
         $user->created = htmltool::datetime2local($user->created);
 
@@ -58,7 +58,7 @@ switch (strtoupper($mode)) {
     case "EDIT";
         $id = (int)$_GET["id"];
 
-        $user = new User();
+        $user = new user();
         if($id > 0) {
             $user->getuser($id);
             $strModeName = "Rediger bruger";
@@ -83,7 +83,7 @@ switch (strtoupper($mode)) {
         break;
 
     case "SAVE":
-        $user = new User();
+        $user = new user();
 
         foreach ($user->arrFormElms as $fieldname => $array_fieldinfo) {
             try {
@@ -101,7 +101,7 @@ switch (strtoupper($mode)) {
 
     case "DELETE":
         $id = (int)$_GET["id"];
-        $user = new User();
+        $user = new user();
         $user->delete($id);
         header("Location: ?mode=list");
         break;
