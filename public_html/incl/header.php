@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="theme-color" content="#FFFFFF">
-
+    <link rel="shortcut icon" type="image/png" href="content/img/logo/favicon.png"/>
     <!--- CSS/STYLE --->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="content/css/style.css">
+    <link rel="stylesheet" href="content/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="content/owlcarousel/owl.theme.default.min.css">
 
     <!--- FONTS --->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
@@ -27,8 +28,8 @@
     <div class="header_top">
         <ul>
             <li><a href="#">Find retailer</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="news.php">News</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
         <div class="ml-auto">
             <a href="#">Sign In</a>
@@ -58,10 +59,10 @@
         <!-- HAMBURGER MENU END -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Mens</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Collections</a></li>
+                <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="mens.php">Mens</a></li>
+                <li><a href="women.php">Women</a></li>
+                <li><a href="collections.php">Collections</a></li>
             </ul>
             <form action="" class="col-md-3">
                 <input type="text" name="search" placeholder="Search.." class="search col-12">

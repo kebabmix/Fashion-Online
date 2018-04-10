@@ -14,32 +14,32 @@ require_once 'incl/header.php'; ?>
         <hr>
         <div class="row">
             <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid">
+                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
                 <p>Lorem ipsum dolor sit amet.</p>
                 <a href="#">More ></a>
             </figure>
             <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid">
+                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
                 <p>Lorem ipsum dolor sit amet.</p>
                 <a href="#">More ></a>
             </figure>
             <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid">
+                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
                 <p>Lorem ipsum dolor sit amet.</p>
                 <a href="#">More ></a>
             </figure>
             <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid">
+                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
                 <p>Lorem ipsum dolor sit amet.</p>
                 <a href="#">More ></a>
             </figure>
             <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid">
+                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
                 <p>Lorem ipsum dolor sit amet.</p>
                 <a href="#">More ></a>
             </figure>
             <figure class="col-md-4">
-                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid">
+                <img src="http://via.placeholder.com/350x150" alt="" class="img-fluid col-12">
                 <p>Lorem ipsum dolor sit amet.</p>
                 <a href="#">More ></a>
             </figure>
