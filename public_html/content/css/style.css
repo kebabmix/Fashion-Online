@@ -34,9 +34,7 @@ small {
 }
 
 /* Header styles */
-.container {
-    padding: 0;
-}
+
 
 .header_top {
     background: #2d2d2d;
@@ -92,6 +90,11 @@ small {
 }
 
 .header_top .ml-auto a {color: #fff;}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
 
 input:focus {
     outline: none;
@@ -236,10 +239,11 @@ input:focus {
 }
 
 /* Lastest arrivals */
-
 #lastest-arrivals {padding-right: 0;}
 #lastest-arrivals .col-md-8 {padding: 0;}
 #lastest-arrivals h1 {margin: 0;}
+#lastest-arrivals img {padding: 0;}
+#lastest-arrivals figure {padding-bottom: 1rem;}
 
 /* Contact CSS */
 .ctcBanner {
@@ -261,9 +265,7 @@ input:focus {
   align-items: center;
 }
 
-.linebox span {
-  margin-left: 1.5rem;
-}
+.linebox span {margin-left: 1.5rem;}
 
 .triangle {
     position: absolute;
@@ -296,7 +298,6 @@ input:focus {
 }
 
 .carousel {
-    display: flex;
     margin: 1rem 0 0 0;
     padding: 1rem;
     background-color: #fff;
@@ -362,13 +363,18 @@ input:focus {
     margin-top: 50px;
 }
 
+img {
+    padding: 0;
+    margin: 0;
+}
+
 /* Desktop styles */
 
 @media only screen and (min-width: 960px) {
     .imgPadFix {
         padding-right: 0px;
     }
-    .container {padding: 0 15px;}
+    .container {padding: 0 15px!important;}
 
     .navbar form {position: relative;}
 
@@ -384,12 +390,16 @@ input:focus {
         flex-direction: row;
     }
 
+    .header_top .btn {margin: 0;}
+
     .navbar li a {
         border-right: 1px solid #eeeeee;
         padding: 10px 25px;
     }
 
-    .header_top .btn {margin: 0;}
+    .navbar-nav li:first-child{
+        border-top: none;
+    }
 
     .sidearea {
         float: right;
@@ -404,8 +414,5 @@ input:focus {
     .fLogo {
         float: right;
         margin-top: -55px;
-    }
-    .navbar-nav li:first-child{
-        border-top: none;
     }
 }
