@@ -213,6 +213,7 @@ input:focus {
 #lastest-arrivals h1 {margin: 0;}
 #lastest-arrivals img {padding: 0;}
 #lastest-arrivals figure {padding-bottom: 1rem;}
+#lastest-arrivals .row {margin-right: 0;}
 
 /* Contact CSS */
 .ctcBanner {
