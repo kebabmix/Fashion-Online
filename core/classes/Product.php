@@ -10,6 +10,7 @@ class product {
     public $catgory;
     public $collection;
     public $gender;
+    public $catgory;
 
     public function __construct() {
         global $db;
@@ -37,6 +38,14 @@ class product {
     public function getRandomProducts() {
         $sql = "SELECT * FROM product WHERE deleted IS NULL ORDER BY RAND() LIMIT 15";
         return $this->db->_fetch_array($sql);
+    }
+    public function getProductGenderAndCategory($gender, $category) {
+        $params = array(
+          $gender,
+          $category
+        );
+        $sql = "SELECT * FROM product WHERE gender = ? AND category = ?";
+        return $this->db->_fetch_array($sql, $params);
     }
     public function getCollectionProducts($collection, $category) {
         $params = array(

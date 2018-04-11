@@ -1,14 +1,15 @@
 <!--- HEADER INCLUDES START --->
 <?php
 require $_SERVER["DOCUMENT_ROOT"] . "/incl/init.php";
-$PageName = "Men";
+$PageName = "T-shirts";
 require_once 'incl/header.php'; ?>
 <!--- HEADER INCLUDES END --->
 
 <section class="row">
     <?php
     $categories = new categories();
-    $category = $categories->getCategories();
+    $category = $categories->getProductGenderAndCategory();
+    var_dump($category);
     ?>
     <div id="lastest-arrivals" class="col-md-8">
         <h1>Men &nbsp; lastest</h1>

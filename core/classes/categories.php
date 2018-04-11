@@ -20,4 +20,5 @@ class categories {
         $sql = "SELECT * FROM collection WHERE deleted = 0 ORDER BY RAND() LIMIT 5";
         return $this->db->_fetch_array($sql);
     }
+
 }

@@ -472,3 +472,9 @@ img {
 
     #lastest-arrivals .row {margin-right: -15px;}
 }
+
+
+a.categoryList {
+  margin: 0 0 0 12px;
+  display: block;
+}
