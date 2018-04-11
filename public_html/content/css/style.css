@@ -465,7 +465,6 @@ img {
 
     .sidearea {
         float: right;
-        display: grid;
         padding-left: 1rem;
     }
 

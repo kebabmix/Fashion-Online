@@ -5,7 +5,7 @@
     <hr>
     <div class="col-md-11">
         <div class="owl-carousel">
-            <?php $products = new Product();
+            <?php $products = new product();
             $latestProducts = $products->getRandomProducts();
             foreach ($latestProducts as $product) : ?>
                 <figure>

@@ -8,6 +8,7 @@ class product {
     public $title;
     public $description;
     public $catgory;
+    public $thumbnail;
     public $collection;
     public $gender;
 
@@ -17,7 +18,7 @@ class product {
     }
     public function getProduct($id) {
         $params = array($id);
-        $sql = "SELECT * FROM product WHERE id = ? AND deleted IS NULL";
+        $sql = "SELECT * FROM product WHERE product.id = ?";
         $row = $this->db->_fetch_array($sql, $params);
         $row = call_user_func_array("array_merge", $row);
         $this->id=$row["id"];

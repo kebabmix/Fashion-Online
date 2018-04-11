@@ -1,6 +1,8 @@
 <!--- HEADER INCLUDES START --->
 <?php $PageName = "Collections";
-require_once 'incl/header.php'; ?>
+require_once 'incl/header.php';
+$collection = new product();
+$collection->getCollections();?>
 <!--- HEADER INCLUDES END --->
 <section class="row">
         <div class="col-md-8">
@@ -9,7 +11,7 @@ require_once 'incl/header.php'; ?>
             Check out all of our collections in this section.
           </p>
           <hr />
-          Indsæt en masse fed PHP her.
+            <a href=""><?= $collection["name"] ?></a>
         </div>
         <aside class="col-md-4 sidearea">
             <img src="content/img/banner1.png" class="col-12"/>

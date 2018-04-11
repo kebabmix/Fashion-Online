@@ -1,5 +1,7 @@
 <!--- HEADER INCLUDES START --->
-<?php $PageName = "Forside";
+<?php
+include 'incl/init.php';
+$PageName = "Forside";
 require_once 'incl/header.php'; ?>
 <!--- HEADER INCLUDES END --->
 <!--- TOP BANNER/TEXT START --->
