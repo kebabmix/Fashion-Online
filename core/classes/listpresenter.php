@@ -11,6 +11,7 @@ class listpresenter {
         $this->accHtml = "";
     }
 
+
     public function presentlist() {
         $this->accHtml = "<div class=\"table-responsive\">\n";
         $this->accHtml .= "<table class='table table-hover'>\n\t";

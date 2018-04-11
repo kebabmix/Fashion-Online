@@ -25,6 +25,7 @@ class product {
         $this->title=$row["title"];
     }
 
+
     public function getAllProducts() {
         $sql = "SELECT * FROM product";
         return $this->db->_fetch_array($sql);
