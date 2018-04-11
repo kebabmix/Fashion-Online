@@ -244,9 +244,8 @@ input:focus {
 #lastest-arrivals .row {margin-right: 0;}
 #lastest-arrivals a:hover {color: #e66a5b;text-decoration: none;}
 .img-wrap {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     align-items: flex-start;
     justify-content: center;
