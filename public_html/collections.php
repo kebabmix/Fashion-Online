@@ -1,5 +1,5 @@
 <!--- HEADER INCLUDES START --->
-<?php $PageName = "Forside";
+<?php $PageName = "Collections";
 require_once 'incl/header.php'; ?>
 <!--- HEADER INCLUDES END --->
 <section class="row">

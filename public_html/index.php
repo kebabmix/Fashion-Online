@@ -1,7 +1,7 @@
 <!--- HEADER INCLUDES START --->
 <?php
 require "incl/init.php";
-$PageName = "Forside";
+$PageName = "Home";
 require_once 'incl/header.php'; ?>
 <!--- HEADER INCLUDES END --->
 

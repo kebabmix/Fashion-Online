@@ -164,6 +164,15 @@ input:focus {
 }
 
 .navbar-toggler:focus {outline: none;}
+.bar1,
+.bar2,
+.bar3,
+#lastest-arrivals a {
+    -webkit-transition: ease .3s;
+    -moz-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
 
 .bar1,
 .bar2,
@@ -173,10 +182,6 @@ input:focus {
     display: block;
     background: #fff;
     margin: 5px 0;
-    -webkit-transition: ease .3s;
-    -moz-transition: ease .3s;
-    -o-transition: ease .3s;
-    transition: ease .3s;
 }
 
 .change .bar1 {
@@ -233,11 +238,11 @@ input:focus {
 
 /* Lastest arrivals */
 #lastest-arrivals {padding-right: 0;}
-#lastest-arrivals .col-md-8 {padding: 0;}
+#lastest-arrivals .col-md-8, #lastest-arrivals img {padding: 0;}
 #lastest-arrivals h1 {margin: 0;}
-#lastest-arrivals img {padding: 0;}
 #lastest-arrivals figure {padding-bottom: 1rem;}
 #lastest-arrivals .row {margin-right: 0;}
+#lastest-arrivals a:hover {color: #e66a5b;text-decoration: none;}
 .img-wrap {
     display: flex;
     align-items: flex-start;
@@ -245,6 +250,12 @@ input:focus {
     max-height: 250px;
     overflow: hidden;
 }
+
+/* Details */
+
+#details {margin-top: 2rem;}
+#details img {padding: 0;}
+#details p {color: #000;}
 
 /* Contact CSS */
 .ctcBanner {
@@ -372,9 +383,6 @@ input:focus {
     text-decoration: none;
     color: #000;
 }
-.owl-carousel img:hover .owl-carousel a {
-    color: #fff;
-}
 
 /* Footer CSS */
 .fColor {
@@ -385,9 +393,7 @@ input:focus {
     color: #a0a0a0;
     padding-top: 30px;
     padding-bottom: 55px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 1rem;
+    margin: 2rem 25px 0 25px;
 }
 
 .fStyle span a {

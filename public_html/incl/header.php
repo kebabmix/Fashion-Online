@@ -1,3 +1,4 @@
+<?php $PageName = "$PageName" ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,10 +60,10 @@
         <!-- HAMBURGER MENU END -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="mens.php">Mens</a></li>
-                <li><a href="women.php">Women</a></li>
-                <li><a href="collections.php">Collections</a></li>
+                <li><a href="index.php" class="<?php echo ($PageName == "Home" ? "active" : "")?>">Home</a></li>
+                <li><a href="mens.php" class="<?php echo ($PageName == "Mens" ? "active" : "")?>">Mens</a></li>
+                <li><a href="women.php" class="<?php echo ($PageName == "Women" ? "active" : "")?>">Women</a></li>
+                <li><a href="collections.php" class="<?php echo ($PageName == "Collections" ? "active" : "")?>">Collections</a></li>
             </ul>
             <form action="" class="col-md-3">
                 <input type="text" name="search" placeholder="Search.." class="search col-12">

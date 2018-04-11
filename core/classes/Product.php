@@ -23,6 +23,7 @@ class product {
         $this->id=$row["id"];
         $this->thumbnail=$row["thumbnail"];
         $this->title=$row["title"];
+        $this->description=$row["description"];
     }
 
 
