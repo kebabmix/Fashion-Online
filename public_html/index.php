@@ -21,10 +21,12 @@ require_once 'incl/header.php'; ?>
         <div class="row">
             <?php foreach ($latestProducts as $product) : ?>
                 <figure class="col-md-4">
-                    <img class="col-12" src='/content/img/products/<?=$product['thumbnail']?>' alt='<?=$product['title']?>'>
+                    <div class="img-wrap">
+                        <img class="col-12" src='/content/img/products/<?=$product['thumbnail']?>' alt='<?=$product['title']?>'>
+                    </div>
                     <figcaption>
                         <?=$product['title']?><br>
-                        <a href="details.php?id=<?=$product['id']?>">More ></a>
+                        <a class="more" href="details.php?id=<?=$product['id']?>">More ></a>
                     </figcaption>
                 </figure>
             <?php endforeach ; ?>

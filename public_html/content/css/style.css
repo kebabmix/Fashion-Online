@@ -24,7 +24,7 @@ body {
 h1, h2, h3, h4 {font-family: bebasregular;}
 small {color: #999;}
 p {color: #a0a0a0;}
-
+.more {color:#bc3726;}
 /* Header styles */
 
 
@@ -238,6 +238,13 @@ input:focus {
 #lastest-arrivals img {padding: 0;}
 #lastest-arrivals figure {padding-bottom: 1rem;}
 #lastest-arrivals .row {margin-right: 0;}
+.img-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 250px;
+    overflow: hidden;
+}
 
 /* Contact CSS */
 .ctcBanner {
@@ -267,9 +274,6 @@ input:focus {
     border-right: 34px solid transparent;
     right: -34px;
     margin-bottom: 30px;
-}
-
-.contactForm {
 }
 
 .contactForm input {
@@ -319,7 +323,7 @@ input:focus {
 
 .owl-next, .owl-prev {
     font-size: 50px!important;
-    display: block!IMPORTANT;
+    display: block!important;
     border:0px solid black;
     width: 50px;
     height: 100px;
@@ -327,35 +331,18 @@ input:focus {
     z-index: 999;
 }
 
-.owl-prev {
-    top: 5%;
-    margin-left: -60px;
-}
+.owl-prev {top: 5%;margin-left: -60px;}
+.owl-next {top: 3%;right: -60px;}
 
-.owl-prev i:before {
-    margin-left: -5px;
-}
-
-.owl-next {
-    top: 3%;
-    right: -60px;
-}
-
-.owl-next i:before {
-    margin-right: -5px;
-}
+.owl-prev i:before {margin-left: -5px;}
+.owl-next i:before {margin-right: -5px;}
 
 .carousel {
     margin: 1rem 0 0 0;
     padding: 1rem;
     background-color: #fff;
 }
-
-.carousel h1,.carousel p {
-    width: 100%;
-    margin-bottom: 0;
-}
-
+.carousel .col-md-11 {margin: 0 auto;}
 .carousel hr {
     border: 0;
     width: 100%;
@@ -363,10 +350,12 @@ input:focus {
     height: 1px;
 }
 
-.carousel .col-md-11 {
-    margin: 0 auto;
+.carousel h1,.carousel p {
+    width: 100%;
+    margin-bottom: 0;
 }
 
+.owl-prev:focus, .owl-next:focus {outline: none;}
 .owl-prev i, .owl-next i {
     background: #000;
     color: #fff;
@@ -378,8 +367,13 @@ input:focus {
     font-size: 35px;
 }
 
-.owl-prev:focus, .owl-next:focus {
-    outline: none;
+.owl-carousel .img-wrap {max-height: 150px;}
+.owl-carousel a, .owl-carousel p {
+    text-decoration: none;
+    color: #000;
+}
+.owl-carousel img:hover .owl-carousel a {
+    color: #fff;
 }
 
 /* Footer CSS */

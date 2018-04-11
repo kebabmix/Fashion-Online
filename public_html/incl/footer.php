@@ -9,10 +9,13 @@
             $latestProducts = $products->getRandomProducts();
             foreach ($latestProducts as $product) : ?>
                 <figure>
-                    <a href="details.php?product=<?= $product['id'] ?>">
+                    <a href="details.php?id=<?= $product['id'] ?>">
+                        <div class="img-wrap">
                         <img class="product-list__image" src="content/img/products/<?= $product['thumbnail'] ?>"
+
                              alt="<?= $product['title'] ?>">
-                        <?= $product['title'] ?>
+                        </div>
+                        <p><?= $product['title'] ?></p>
                     </a>
                 </figure>
             <?php endforeach; ?>
