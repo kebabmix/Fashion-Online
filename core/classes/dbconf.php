@@ -7,4 +7,5 @@ class dbconf extends db {
         $this->dbname = "fashion_online";
         $db = parent::_connect();
     }
+
 }

@@ -14,7 +14,6 @@ class user {
     public $arrGroups;
     private $db;
 
-
     public function __construct(){
         global $db;
         $this->db = $db;

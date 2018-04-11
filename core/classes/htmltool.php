@@ -23,6 +23,7 @@ class htmltool
     }
 
 
+
     static function linkicon($link, $icon, $attr = array()) {
         $class = isset($attr["class"]) ? $attr["class"] : "icon";
         return "<a class='$class' href='$link'><i class='fa fa-".$icon."'></i></a>\n";

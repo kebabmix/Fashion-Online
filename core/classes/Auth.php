@@ -57,7 +57,6 @@ class auth {
 
         $params = array($this->username);
 
-
         $strSelectUser = "SELECT id, password " .
             "FROM user " .
             "WHERE username = ? " .
