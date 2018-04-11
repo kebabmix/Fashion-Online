@@ -7,7 +7,7 @@ $id = (int)$_GET['id'];
 $product->getProduct($id);
 echo "<div class=\"\">";
 echo "<h2>" . $product->title . "</h2><br>";
-echo "<img class=\"col-6\" src=\"content/img/products/". $product->thumbnail ."\" />";
+echo "<img class=\"col-md-4\" src=\"content/img/products/". $product->thumbnail ."\" />";
 echo "</div>";
 
 require DOCROOT . "/incl/footer.php";
