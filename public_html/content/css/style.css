@@ -261,7 +261,7 @@ input:focus {
     padding-right: 0;
 }
 
-#lastest-arrivals .col-md-8, #lastest-arrivals img {
+#lastest-arrivals .col-md-8, #lastest-arrivals img, #collections figure img  {
     padding: 0;
 }
 
@@ -269,7 +269,7 @@ input:focus {
     margin: 0;
 }
 
-#lastest-arrivals figure {
+#lastest-arrivals figure, #collections figure {
     padding-bottom: 1rem;
 }
 
@@ -288,8 +288,16 @@ input:focus {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    max-height: 250px;
+    max-height: 200px;
     overflow: hidden;
+}
+
+.img-wrap img {
+    padding: 0;
+}
+
+#collections .img-wrap img{
+
 }
 
 /* Details */

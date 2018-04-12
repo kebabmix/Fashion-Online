@@ -40,6 +40,14 @@ class product {
         $sql = "SELECT * FROM product WHERE deleted IS NULL ORDER BY RAND() LIMIT 15";
         return $this->db->_fetch_array($sql);
     }
+    public function getProductsByCategory($collection, $category) {
+        $params = array(
+            '%'.$collection.'%',
+            $category
+        );
+        $sql = "SELECT * FROM product WHERE collection_id LIKE ? AND category_id = ?";
+        return $this->db->_fetch_array($sql, $params);
+    }
     public function getCollectionProducts($collection, $category) {
         $params = array(
             $collection,
