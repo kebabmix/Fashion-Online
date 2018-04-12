@@ -132,7 +132,6 @@ switch (strtoupper($mode)) {
         </div>
     <?php
 }
-//Switch
 
 require DOCROOT . "/incl/footer.php";
 ?>
