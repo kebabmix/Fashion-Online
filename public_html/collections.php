@@ -39,21 +39,7 @@ switch (strtoupper($mode)) {
                 </div>
             </div>
 
-            <aside class="col-md-4 sidearea">
-                <img src="content/img/banner2.png" class="col-12"/>
-                <img src="content/img/campaign.jpg" alt="" class="col-12">
-                <img src="content/img/campaign-2.jpg" alt="" class="col-12">
-                <form class="newsletter" method="post">
-                    <h4>Sign up to our newsletter</h4>
-                    <hr>
-                    <label for="inputEmail" class="col-3">E-Mail</label>
-                    <input type="email" name="email" id="inputEmail" style="margin-bottom:1rem;">
-                    <label for="inputName" class="col-3">Name</label>
-                    <input type="name" name="name" id="inputName" class="">
-                    <br>
-                    <button class="btn ml-auto" type="submit">Signup</button>
-                </form>
-            </aside>
+            <?php include "incl/sidearea.php"; ?>
         </section>
         <?php break;
 
@@ -79,27 +65,12 @@ switch (strtoupper($mode)) {
                                 <img class="col-12" src='/content/img/products/<?= $category['thumbnail'] ?>' alt='<?= $category['name'] ?>'>
                             </div>
                             <?= $category['name'] ?><br>
-                            <a href="?mode=products&collection=<?= $collectionID ?>&category=<?= $category['id'] ?>">More
-                                ></a>
+                            <a class="more" href="?mode=products&collection=<?= $collectionID ?>&category=<?= $category['id'] ?>">More ></a>
                         </figure>
                     <?php endforeach; ?>
                 </div>
             </div>
-            <aside class="col-md-4 sidearea">
-                <img src="content/img/banner2.png" class="col-12"/>
-                <img src="content/img/campaign.jpg" alt="" class="col-12">
-                <img src="content/img/campaign-2.jpg" alt="" class="col-12">
-                <form class="newsletter" method="post">
-                    <h4>Sign up to our newsletter</h4>
-                    <hr>
-                    <label for="inputEmail" class="col-3">E-Mail</label>
-                    <input type="email" name="email" id="inputEmail" style="margin-bottom:1rem;">
-                    <label for="inputName" class="col-3">Name</label>
-                    <input type="name" name="name" id="inputName" class="">
-                    <br>
-                    <button class="btn ml-auto" type="submit">Signup</button>
-                </form>
-            </aside>
+            <?php include "incl/sidearea.php"; ?>
         </section>
         <?php break;
 
@@ -138,21 +109,7 @@ switch (strtoupper($mode)) {
                     <?php endif; ?>
                     </div>
                 </div>
-                <aside class="col-md-4 sidearea">
-                    <img src="content/img/banner2.png" class="col-12"/>
-                    <img src="content/img/campaign.jpg" alt="" class="col-12">
-                    <img src="content/img/campaign-2.jpg" alt="" class="col-12">
-                    <form class="newsletter" method="post">
-                        <h4>Sign up to our newsletter</h4>
-                        <hr>
-                        <label for="inputEmail" class="col-3">E-Mail</label>
-                        <input type="email" name="email" id="inputEmail" style="margin-bottom:1rem;">
-                        <label for="inputName" class="col-3">Name</label>
-                        <input type="name" name="name" id="inputName" class="">
-                        <br>
-                        <button class="btn ml-auto" type="submit">Signup</button>
-                    </form>
-                </aside>
+                <?php include "incl/sidearea.php"; ?>
             </section>
         </main>
         <?php break;

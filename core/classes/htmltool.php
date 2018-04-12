@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * user: heka
- * Date: 02/02/2018
- * Time: 05.35
- */
-
 class htmltool
 {
     /**
@@ -24,8 +17,7 @@ class htmltool
 
 
 
-    static function linkicon($link, $icon, $attr = array()) {
-        $class = isset($attr["class"]) ? $attr["class"] : "icon";
+    static function linkicon($class, $link, $icon, $attr = array()) {
         return "<a class='$class' href='$link'><i class='fa fa-".$icon."'></i></a>\n";
     }
 

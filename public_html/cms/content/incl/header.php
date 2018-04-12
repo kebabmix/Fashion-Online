@@ -20,12 +20,10 @@ $strCss = isset($strCss) && !empty($strCss) ? $strCss : "bootstrap.min,cms-style
     <nav>
         <div class="brand">CMS</div>
         <ul>
-            <li><a href="index.php">Forside</a></li>
-            <li><a href="product.php">Produkter</a></li>
-            <li><a href="">Noget</a></li>
-            <li><a href="">Noget</a></li>
-            <li><a href="">Noget</a></li>
+            <li><a href="index.php">Users</a></li>
+            <li><a href="product.php">Products</a></li>
         </ul>
         <a href="?action=logout" class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
     </nav>
+    <hr>
     <div class="content container-fluid">

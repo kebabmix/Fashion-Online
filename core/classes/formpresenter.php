@@ -1,15 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * user: chri798x
- * Date: 09-04-2018
- * Time: 12:55
- */
 
-class formpresenter
-{
-    /* Class Properties */
-
+class formpresenter{
     public $arrFormElms;
     public $arrValues;
 
@@ -23,8 +14,7 @@ class formpresenter
     public $arrButtons;
 
 
-    public function __construct($arrFormElms, $arrValues)
-    {
+    public function __construct($arrFormElms, $arrValues){
         $this->arrFormElms = $arrFormElms;
         $this->arrValues = $arrValues;
 
@@ -38,8 +28,7 @@ class formpresenter
     }
 
 
-    public function presentForm()
-    {
+    public function presentForm(){
 
         $this->accHtml = "<form method=\"" . $this->formMethod . "\" class=\"" . $this->formClass . " form-horizontal\" \" id=\"" . $this->formId . "\">\n";
         $this->accHtml .= "<input type=\"hidden\" name=\"mode\" value=\"" . $this->formAction . "\">\n";
@@ -63,32 +52,6 @@ class formpresenter
                     $strInputHtml = $this->arrValues[$name];
                     $this->accHtml .= $this->setInputGroup($name, $formelements[1], $strInputHtml, $formelements[2]);
                     break;
-                case "CHECKBOX":
-                    $strInputHtml = $this->inputCheckbox($name, $this->arrValues[$name]);
-                    $this->accHtml .= $this->setInputGroup($name, $formelements[1], $strInputHtml);
-                    break;
-                case "DATE":
-                    $stamp = ($this->arrValues[$name] > 0) ? $this->arrValues[$name] : time();
-                    $d = new DateSelector($stamp);
-                    $strInputHtml = "<div class=\"form-inline\">";
-                    $strInputHtml .= $d->dateselect("day", $name);
-                    $strInputHtml .= $d->dateselect("month", $name);
-                    $strInputHtml .= $d->dateselect("year", $name);
-                    $strInputHtml .= "</div>";
-                    $this->accHtml .= $this->setInputGroup($name, $formelements[1], $strInputHtml, $formelements[2]);
-                    break;
-                case "DATETIME":
-                    $stamp = ($this->arrValues[$name] > 0) ? $this->arrValues[$name] : time();
-                    $d = new DateSelector($stamp);
-                    $strInputHtml = "<div class=\"form-inline\">";
-                    $strInputHtml .= $d->dateselect("day", $name);
-                    $strInputHtml .= $d->dateselect("month", $name);
-                    $strInputHtml .= $d->dateselect("year", $name);
-                    $strInputHtml .= $d->dateselect("hours", $name);
-                    $strInputHtml .= $d->dateselect("minutes", $name);
-                    $strInputHtml .= "</div>";
-                    $this->accHtml .= $this->setInputGroup($name, $formelements[1], $strInputHtml, $formelements[2]);
-                    break;
             }
         }
 
@@ -107,24 +70,24 @@ class formpresenter
     }
 
 
-    public function inputHidden($name, $value){
+    public function inputHidden($name, $value) {
         return "<input type=\"hidden\" name=\"" . $name . "\" id=\"" . $name . "\" value=\"" . $value . "\">\n";
     }
 
-    public function inputText($name, $value, $required){
+    public function inputText($name, $value, $required) {
         return "<input type=\"text\" name=\"" . $name . "\" id=\"" . $name . "\" class=\"form-control\" value=\"" . $value . "\" " . $required . ">\n";
     }
 
-    public function inputEmail($name, $value, $required){
+    public function inputEmail($name, $value, $required) {
         return "<input type=\"email\" name=\"" . $name . "\" id=\"" . $name . "\" class=\"form-control\" value=\"" . $value . "\" " . $required . ">\n";
     }
 
-    public function inputCheckbox($id, $value){
+    public function inputCheckbox($id, $value) {
         $checked = ($id === $value) ? "checked" : "";
         return "<input type=\"checkbox\" name=\"" . $id . "\" id=\"" . $id . "\" value=\"1\"   " . $checked . ">\n";
     }
 
-    static function inputSelect($name, $options, $value){
+    static function inputSelect($name, $options, $value) {
         $strHtml = "<select class=\"form-control\" id=\"" . $name . "\" name=\"" . $name . "\">\n";
         foreach ($options as $option_value => $option_text) {
             /* Define if option should be selected */
@@ -136,7 +99,7 @@ class formpresenter
         return $strHtml;
     }
 
-    public function setInputGroup($fieldname, $labeltext, $strInputHtml){
+    public function setInputGroup($fieldname, $labeltext, $strInputHtml) {
         $str = "<div class=\"form-group\" data-group=\"" . $fieldname . "\">\n";
         $str .= "  <label class=\"col-sm-2 control-label\"  for=\"" . $fieldname . "\">" . $labeltext . ":</label>\n";
         $str .= "  <div class=\"col-sm-10\">\n\t" . $strInputHtml . "  </div>\n";

@@ -36,11 +36,6 @@ h2 {margin-bottom: 30px;}
 
 .form-group {position: relative;}
 
-.form-group input {
-    border-radius: 2px;
-    padding-left: 15%;
-}
-
 .form-group .fa {
     position: absolute;
     text-align: center;
@@ -50,4 +45,8 @@ h2 {margin-bottom: 30px;}
     background-color: #ccc;
     padding: 10px;
     z-index: 999;
+}
+
+.btn:hover {
+    background-color: rgba(170,170,170, .7);
 }

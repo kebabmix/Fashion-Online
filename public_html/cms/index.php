@@ -6,40 +6,40 @@ $strModuleName = "CMS";
 switch (strtoupper($mode)) {
     default:
     case "LIST":
-        include DOCROOT . "/cms/content/incl/header.php";
+        require_once DOCROOT . "/cms/content/incl/header.php";
         $user = new user();
 
         $users = array();
 
-    $columns = [
-        "options" => "",
-        "username" => "Brugernavn",
-        "created" => "Oprettet"
-    ];
-        foreach ($user->getlist() as $values) {
-            $values["options"] = htmltool::linkicon("?mode=edit&id=" . $values["id"], "edit", ["id" => 3]) .
-                htmltool::linkicon("?mode=details&id=" . $values["id"], "eye") .
-                htmltool::linkicon("?mode=delete&id=" . $values["id"], "trash");
+        $columns = [
+            "options" => "",
+            "username" => "Username",
+            "created" => "Created"
+        ];
 
-            $values["created"] = htmltool::datetime2local($values["created"]);
+        foreach ($user->getlist() as $values) {
+            $values["options"] = htmltool::linkicon("view", "?mode=edit&id=" . $values["id"], "edit", ["id" => 3]) .
+                htmltool::linkicon("edit", "?mode=details&id=" . $values["id"], "eye") .
+                htmltool::linkicon("delete", "?mode=delete&id=" . $values["id"], "trash");
+
             $users[] = $values;
         }
 
         $p = new listPresenter($columns, $users);
         echo $p->presentlist();
 
-
-        include DOCROOT . "/cms/content/incl/footer.php";
+        require_once DOCROOT . "/cms/content/incl/footer.php";
         break;
 
     case "DETAILS":
         $id = (int)$_GET["id"];
 
-        include DOCROOT . "/cms/content/incl/header.php";
+        require_once DOCROOT . "/cms/content/incl/header.php";
 
         $arrButtonPanel = [
             htmltool::linkbutton("Oversigt", "?mode=list")
         ];
+
         echo textPresenter::presentpanel($strModuleName, "Vis detaljer", $arrButtonPanel);
 
         $user = new user();
@@ -52,14 +52,15 @@ switch (strtoupper($mode)) {
         $p = new listPresenter($user->arrLabels, $users);
         echo $p->presentdetails();
 
-        include DOCROOT . "/cms/content/incl/footer.php";
+        require_once DOCROOT . "/cms/content/incl/footer.php";
         break;
 
     case "EDIT";
         $id = (int)$_GET["id"];
-
         $user = new user();
-        if($id > 0) {
+        require_once DOCROOT . "/cms/content/incl/header.php";
+
+        if ($id > 0) {
             $user->getuser($id);
             $strModeName = "Rediger bruger";
         } else {
@@ -67,18 +68,15 @@ switch (strtoupper($mode)) {
         }
         $arrValues = get_object_vars($user);
 
-        include DOCROOT . "/cms/content/incl/header.php";
-
         $arrButtonPanel = [
             htmltool::linkbutton("Oversigt", "?mode=list")
         ];
         echo textPresenter::presentpanel($strModuleName, $strModeName, $arrButtonPanel);
 
-
         $p = new formpresenter($user->arrFormElms, $arrValues);
         echo $p->presentForm();
 
-        include DOCROOT . "/cms/content/incl/footer.php";
+        require_once DOCROOT . "/cms/content/incl/footer.php";
 
         break;
 
