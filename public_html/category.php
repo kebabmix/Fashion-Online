@@ -16,8 +16,14 @@ require_once 'incl/header.php'; ?>
         <hr>
         <div class="row">
             <?php foreach ($category as $categories) : ?>
-                <a class="categoryList" href="category.php?id=<?= $categories['id'] ?>"><?= $categories['name'] ?></a>
+              <a class="categoryList" href="category.php?id=<?= $categories['id'] ?>"><?= $categories['name'] ?></a>
             <?php endforeach ; ?>
+
+            <?php
+            $categories = new categories();
+            $category = $categories->getCategories();
+            ?>
+
         </div>
     </div>
     <aside class="col-md-4 sidearea">
