@@ -325,6 +325,7 @@ input:focus {
 
 #news img {
     padding: 0;
+    float: left;
 }
 
 /* Details */
