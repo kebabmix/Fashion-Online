@@ -24,7 +24,6 @@ $strCss = isset($strCss) && !empty($strCss) ? $strCss : "bootstrap.min,cms-style
             <i class="fa fa-key" aria-hidden="true"></i>
             <input type="password" class="form-control" name="login_password" id="pwd" placeholder="Password">
         </div>
-        <a href="signup.php">sign up</a>
         <button type="submit" class="btn btn-primary col">Login&nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i></button>
     </form>
 </div>

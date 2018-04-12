@@ -23,7 +23,7 @@ switch (strtoupper($mode)) {
                 htmltool::linkicon("delete", "?mode=delete&id=" . $values["id"], "trash");
             $products[] = $values;
         }
-
+        echo "<a href=\"?mode=edit\">Create product</a>";
         $p = new listPresenter($columns, $products);
         echo $p->presentlist();
         ?>

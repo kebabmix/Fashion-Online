@@ -1,17 +1,11 @@
-<!--- HEADER INCLUDES START --->
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . "/incl/init.php");
 $mode = isset($_REQUEST["mode"]) && !empty($_REQUEST["mode"]) ? $_REQUEST["mode"] : "";
 $PageName = "Collections";
 require DOCROOT . "/incl/header.php";
-?>
-
-
-<?php
 switch (strtoupper($mode)) {
     default:
-    case "LIST": ?>
-        <?php
+    case "LIST":
         $collection = new collection();
         $collection = $collection->getCollections();
         $categories = new categories();

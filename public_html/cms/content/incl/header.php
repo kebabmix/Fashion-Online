@@ -22,6 +22,7 @@ $strCss = isset($strCss) && !empty($strCss) ? $strCss : "bootstrap.min,cms-style
         <ul>
             <li><a href="index.php">Users</a></li>
             <li><a href="product.php">Products</a></li>
+            <li><a href="news.php">News</a></li>
         </ul>
         <a href="?action=logout" class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
     </nav>
